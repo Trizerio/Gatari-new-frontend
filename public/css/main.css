@@ -13,7 +13,7 @@ body {
       rgba(255, 255, 255, 0.1), 
       rgba(255, 255, 255, 0.1)
     ),
-    url(images/bg2.png);
+    url(/images/bg2.png);
 }
 .block-pad {
     padding-left: 64px;
@@ -62,7 +62,7 @@ body {
     
 }
 .main-block {
-    background-image: url(images/main-bg2.png);
+    background-image: url(/images/main-bg2.png);
     border-radius: 8px;
     height: 400px;
     background-size: cover;
@@ -86,7 +86,7 @@ body {
 }
 .main-block-registration {
     margin-top: 100px;
-    background-image: url(images/reg-btn.png);
+    background-image: url(/images/reg-btn.png);
     margin-left: 64px;
     background-size: cover;
     width: 170px;
@@ -109,7 +109,8 @@ body {
   filter: brightness(1.4);
 }
 .info-block {
-    background-image: url(images/info-block.png);
+    background-image: url(/images/info-block.png);
+    background-position-x: right;
     border-radius: 8px;
     height: 220px;
     background-size: cover;
@@ -127,7 +128,7 @@ body {
     padding-top: 28px;
 }
 .server-status {
-    background-image: url(images/server-stats-bg.png);
+    background-image: url(/images/server-stats-bg.png);
     border-radius: 8px;
     height: 240px;
     background-size: cover;
@@ -147,7 +148,7 @@ body {
     float: left;
 }
 .server-druzhban {
-    background-image: url(images/server-druzhban-bg.png);
+    background-image: url(/images/server-druzhban-bg.png);
     border-radius: 8px;
     height: 240px;
     background-size: cover;
@@ -186,7 +187,7 @@ body {
       rgba(255, 255, 255, 0.03), 
       rgba(255, 255, 255, 0.03)
     ),
-    url(images/bg2.png);
+    url(/images/bg2.png);
     height: 180px;
     width: 100%;
     margin-top: 8px;
@@ -205,6 +206,12 @@ body {
     padding-top: 24px;
     padding-right: 36px;
     text-align: right;
+}
+.footer-info-block>.footer-title{
+    color: white !important; 
+    font-size: 20px; 
+    font-weight: 600; 
+    padding-left: 40px;
 }
 
 
