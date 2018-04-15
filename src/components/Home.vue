@@ -10,7 +10,7 @@
                     и хорошей администрацией
                     </div>
                     <div class="main-block-gatari3 block-pad">
-                        <a style="color: #b31b82;"> 6000 </a> пользователей <a style="color: #b31b82;"> 64 </a> активных пользователя
+                        <a style="color: #b31b82;"> {{ users }} </a> пользователей <a style="color: #b31b82;"> {{ usersOnline }} </a> активных пользователя
                     </div>
                     <button class="main-block-registration">
                         регистрация
@@ -45,9 +45,9 @@
                     </div>
                     <img  style="float: right; padding-right: 64px; padding-top: 28px;" src="images/icons/server-pie.png">
                     <div class="server-status-online block-pad">
-                        <a style="font-size: 30px;"> {{ usersOnline }} </a> online users <a style="font-size: 30px;">  300  </a> banned users  <a style="font-size: 30px;"> 6432 </a> users
+                        <a style="font-size: 30px;"> {{ usersOnline }} </a> online users <a style="font-size: 30px;">  {{ banned }}  </a> banned users  <a style="font-size: 30px;"> {{ users }} </a> users
                         <br>
-                        <a style="font-size: 30px;"> 1.373m </a> scores
+                        <a style="font-size: 30px;"> {{ scores }} </a> scores
                     </div>
                 </div>
             </div>
@@ -91,7 +91,10 @@ export default {
     name: 'Home',
     data: function () {
         return {
-            usersOnline: 0
+            usersOnline: 0,
+            banned: 0,
+            users: 0,
+            scores: "0"
         }
     },
     created: function(){
@@ -100,10 +103,16 @@ export default {
     methods:{
         initMethod: function(){
             var vm = this;
-            axios.get("http://osu.gatari.pw/api/v1/system/online")
+            vm.getStats("online", (data) => vm.usersOnline = data);
+            vm.getStats("banned", (data) => vm.banned = data);
+            vm.getStats("users", (data) => vm.users = data);
+            vm.getStats("scores", (data) => vm.scores = data);
+
+        },
+        getStats: function(type, callback){
+            axios.get("http://osu.gatari.pw/api/v1/system/"+type)
             .then(function(response){
-                vm.usersOnline = response.data.result;
-                console.log(response.data.result);
+                return callback(response.data.result);
             });
         }
     }
