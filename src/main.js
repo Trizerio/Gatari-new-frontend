@@ -1,10 +1,23 @@
 import Vue from 'vue'
 import App from './App.vue'
-import Vuex from 'vuex'
+import Home from './components/Home.vue'
+import VueRouter from 'vue-router'
 
-Vue.use(Vuex)
+Vue.use(VueRouter)
+
 Vue.config.productionTip = false
+var router = new VueRouter({
+  routes: [
+    {
+      path: '/',
+      name: 'index',
+      component: Home
+    }
+  ]
+})
 
 new Vue({
+  el: '#app',
+  router,
   render: h => h(App)
-}).$mount('#app')
+});
