@@ -45,7 +45,6 @@ body {
 }
 .login {
     color: white;
-    font-size 12px;
     margin-top: 8px;
     margin-left: 28px;
     text-decoration: none;
@@ -162,7 +161,6 @@ body {
 .server-druzhban-text {
     padding-top: 24px;
     font-size: 24px;
-    float: left;
     display: inline-block;
 }
 .server-druzhban-user {

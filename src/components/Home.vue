@@ -1,5 +1,5 @@
 <template>
-<div>
+<div id="home">
     <div class="container">
         <div class="row"> 
             <div class="col"> 
@@ -45,7 +45,7 @@
                     </div>
                     <img  style="float: right; padding-right: 64px; padding-top: 28px;" src="images/icons/server-pie.png">
                     <div class="server-status-online block-pad">
-                        <a style="font-size: 30px;"> 99 </a> online users <a style="font-size: 30px;">  300  </a> banned users  <a style="font-size: 30px;"> 6432 </a> users
+                        <a style="font-size: 30px;"> {{ usersOnline }} </a> online users <a style="font-size: 30px;">  300  </a> banned users  <a style="font-size: 30px;"> 6432 </a> users
                         <br>
                         <a style="font-size: 30px;"> 1.373m </a> scores
                     </div>
@@ -80,11 +80,35 @@
         </div>
         </div>
     </div>
+    
 </div>
 </template>
 
 <script>
-    export default {
-      name: 'Home'
+import axios from 'axios'
+
+export default {
+    name: 'Home',
+    data: function () {
+        return {
+            usersOnline: 0
+        }
+    },
+    created: function(){
+        this.initMethod();
+    },
+    methods:{
+        initMethod: function(){
+            var vm = this;
+            axios.get("http://osu.gatari.pw/api/v1/system/online")
+            .then(function(response){
+                vm.usersOnline = response.data.result;
+                console.log(response.data.result);
+            });
+        }
     }
-</script>
+
+}
+
+    </script>
+
