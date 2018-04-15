@@ -25,6 +25,7 @@ body {
     font-size: 28px;
     font-weight: 400;
     padding-top: 4px;
+    padding-left: 24px;
     cursor: pointer;
 }
 .navbar .navbar-nav .nav-link { 
