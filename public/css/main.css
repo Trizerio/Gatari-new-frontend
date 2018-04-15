@@ -63,8 +63,9 @@ body {
     
 }
 .main-block {
-    background-image: url(/images/main-bg2.png);
+    background-image: url(/images/main-bg.png);
     border-radius: 8px;
+    background-position-x: right;
     height: 400px;
     background-size: cover;
     color: white;
