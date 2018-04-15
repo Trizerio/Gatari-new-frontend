@@ -105,12 +105,12 @@ export default {
             var vm = this;
             vm.getStats("online", (data) => vm.usersOnline = data);
             vm.getStats("banned", (data) => vm.banned = data);
-            vm.getStats("users", (data) => vm.users = data);
+            vm.getStats("users",  (data) => vm.users = data);
             vm.getStats("scores", (data) => vm.scores = data);
 
         },
         getStats: function(type, callback){
-            axios.get("http://osu.gatari.pw/api/v1/system/"+type)
+            axios.get("https://api.gatari.pw/stats/"+type)
             .then(function(response){
                 return callback(response.data.result);
             });
