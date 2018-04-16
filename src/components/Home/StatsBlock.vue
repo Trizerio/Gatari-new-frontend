@@ -30,11 +30,10 @@
         methods:{
             initMethod: function(){
                 var vm = this;
-                vm.getStats("online", (data) => vm.usersOnline = data);
                 vm.getStats("banned", (data) => vm.banned = data);
                 vm.getStats("users",  function(data){
                     vm.users = data;
-                    vm.sendStats();
+                    vm.getStats("online", function(data){ vm.usersOnline = data; vm.sendStats();});
                 });
                 vm.getStats("scores", (data) => vm.scores = data);
                 
