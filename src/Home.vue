@@ -10,7 +10,7 @@
                     и хорошей администрацией
                     </div>
                     <div class="main-block-gatari3 block-pad">
-                        <a style="color: #a9194c;"> {{ users }} </a> пользователей <a style="color: #a9194c;"> {{ usersOnline }} </a> активных пользователя
+                        <a class="users-count"> {{ users }}</a> пользователей <a class="users-count"> {{ usersOnline }}</a> активных пользователя
                     </div>
                     <button class="main-block-registration">
                         регистрация
