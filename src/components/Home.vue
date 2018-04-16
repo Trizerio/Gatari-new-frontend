@@ -60,21 +60,13 @@
                         <img  style="float: right; padding-right: 64px; padding-top: 30px;" src="images/icons/druzhban-fist.png">
                     </div>
                         <div class="server-druzhban-user-block">
-                    <div class="server-druzhban-user">
-                        <img src="images/icons/druzhban-avatar.png"  class="server-druzhban-avatar block-pad">
-                        <a style="padding-left: 6px;">Memento mori</a>
+                    <template v-for="druzhban in druzhbans">
+                    <div class="server-druzhban-user" :key="druzhban.id">
+                        <img :src="'https://a.gatari.pw/'+druzhban.id"  class="server-druzhban-avatar block-pad">
+                        <a style="padding-left: 6px;">{{ druzhban.username }}</a>
                         <div class="druzhban-month"> 3 month</div>
                     </div>
-                    <div class="server-druzhban-user">
-                        <img src="images/icons/druzhban-avatar.png"  class="server-druzhban-avatar block-pad">
-                        <a style="padding-left: 6px;">Memento mori</a>
-                        <div class="druzhban-month"> 3 month</div>
-                    </div>
-                    <div class="server-druzhban-user">
-                        <img src="images/icons/druzhban-avatar.png"  class="server-druzhban-avatar block-pad">
-                        <a style="padding-left: 6px;">Memento mori</a>
-                        <div class="druzhban-month"> 3 month</div>
-                    </div>
+                </template>
                         </div>
             </div>
         </div>
@@ -94,7 +86,8 @@ export default {
             usersOnline: 0,
             banned: 0,
             users: 0,
-            scores: "0"
+            scores: "0",
+            druzhbans: []
         }
     },
     created: function(){
@@ -107,7 +100,11 @@ export default {
             vm.getStats("banned", (data) => vm.banned = data);
             vm.getStats("users",  (data) => vm.users = data);
             vm.getStats("scores", (data) => vm.scores = data);
-
+            axios.get("https://api.gatari.pw/donors")
+            .then(function(response){
+                vm.druzhbans = response.data.result;
+                console.log(vm.druzhbans);
+            });
         },
         getStats: function(type, callback){
             axios.get("https://api.gatari.pw/stats/"+type)

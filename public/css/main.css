@@ -169,6 +169,7 @@ body {
 }
 .server-druzhban-avatar {
     float: left;      
+    height: 30px;
 }
 .server-druzhban-head {
     height: 60px;
