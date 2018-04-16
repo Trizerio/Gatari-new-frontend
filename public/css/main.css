@@ -207,12 +207,15 @@ body {
     height: 180px;
     width: 100%;
     margin-top: 8px;
+    position: relative;
+    left: 0;
+    bottom: 0;
 }
 .footer-info-block {
     color: #f3b3dd;
     padding-top: 24px;
     float: left;
-    font-size: 14px
+    font-size: 14px;
 }
 
 .footer-info-block a{
@@ -230,7 +233,6 @@ body {
 
 .footer-logo>.subtitle{
     font-size: 18px;
-    padding-right: 6px
 }
 
 .footer-info-block>.footer-title{
@@ -252,8 +254,17 @@ body {
     .server-druzhban {
         width: 690px;
     }
-    .main-block-registration {
-        
+   .footer-logo {
+    font-size: 24px;
+    padding-top: 24px;
+    padding-right: 6px;
+
+}
+    .footer-logo>.subtitle{
+    font-size: 16px;
+}
+    .footer-bg {
+        position: absolute;
     }
 
 }
