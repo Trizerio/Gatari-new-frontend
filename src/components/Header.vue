@@ -18,7 +18,7 @@
                 <div class="navbar-nav">
                   <a class="nav-item nav-link active" href="#">Leaderboard <span class="sr-only">(current)</span></a>
                   <a class="nav-item nav-link" href="#">Beatmaps</a>
-                            <input type="text" class="main-search">
+                            <input type="text" class="main-search" placeholder="Search" >
            
                 <a href="#" class="login">      <img src="images/icons/login.png"  style="box-shadow: none !important; height: 16px; width: 16px;"> Login</a>
                 </div>

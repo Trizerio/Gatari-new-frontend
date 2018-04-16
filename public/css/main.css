@@ -7,6 +7,8 @@ li {
     list-style-type: none;
 }
 
+
+
 body {
       background: 
     linear-gradient(
@@ -240,7 +242,7 @@ body {
     box-shadow: -1px 2px 2px 1px rgba(0, 0, 0, 0.11);
     margin-bottom: 8px;
 }
-@ media (min-width: 820px){ 
+@media (max-width: 992px) and (min-width: 520px){
     .server-stats {
         width: 690px;
     }
@@ -252,7 +254,7 @@ body {
 
 .header-bg:before {
     content: "";
-    background: linear-gradient(to bottom, rgba(248,80,50,0) 0%, rgba(246,41,12,0) 0%, rgba(31, 8, 16, 0.41) 100%);
+    background: linear-gradient(to bottom, rgba(248,80,50,0) 0%, rgba(246,41,12,0) 0%, rgba(170, 26, 77, 1) 100%);
     position: absolute;
     top: 0;
     left: 0;
