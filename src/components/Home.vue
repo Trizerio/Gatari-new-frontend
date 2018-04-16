@@ -1,5 +1,5 @@
 <template>
-<div>
+<div id="home">
     <div class="container">
         <div class="row"> 
             <div class="col"> 
@@ -10,7 +10,7 @@
                     и хорошей администрацией
                     </div>
                     <div class="main-block-gatari3 block-pad">
-                        <a style="color: #b31b82;"> 6000 </a> пользователей <a style="color: #b31b82;"> 64 </a> активных пользователя
+                        <a style="color: #b31b82;"> {{ users }} </a> пользователей <a style="color: #b31b82;"> {{ usersOnline }} </a> активных пользователя
                     </div>
                     <button class="main-block-registration">
                         регистрация
@@ -45,9 +45,9 @@
                     </div>
                     <img  style="float: right; padding-right: 64px; padding-top: 28px;" src="images/icons/server-pie.png">
                     <div class="server-status-online block-pad">
-                        <a style="font-size: 30px;"> 99 </a> online users <a style="font-size: 30px;">  300  </a> banned users  <a style="font-size: 30px;"> 6432 </a> users
+                        <a style="font-size: 30px;"> {{ usersOnline }} </a> online users <a style="font-size: 30px;">  {{ banned }}  </a> banned users  <a style="font-size: 30px;"> {{ users }} </a> users
                         <br>
-                        <a style="font-size: 30px;"> 1.373m </a> scores
+                        <a style="font-size: 30px;"> {{ scores }} </a> scores
                     </div>
                 </div>
             </div>
@@ -60,31 +60,61 @@
                         <img  style="float: right; padding-right: 64px; padding-top: 30px;" src="images/icons/druzhban-fist.png">
                     </div>
                         <div class="server-druzhban-user-block">
-                    <div class="server-druzhban-user">
-                        <img src="images/icons/druzhban-avatar.png"  class="server-druzhban-avatar block-pad">
-                        <a style="padding-left: 6px;">Memento mori</a>
+                    <template v-for="druzhban in druzhbans">
+                    <div class="server-druzhban-user" :key="druzhban.id">
+                        <img :src="'https://a.gatari.pw/'+druzhban.id"  class="server-druzhban-avatar block-pad">
+                        <a style="padding-left: 6px;">{{ druzhban.username }}</a>
                         <div class="druzhban-month"> 3 month</div>
                     </div>
-                    <div class="server-druzhban-user">
-                        <img src="images/icons/druzhban-avatar.png"  class="server-druzhban-avatar block-pad">
-                        <a style="padding-left: 6px;">Memento mori</a>
-                        <div class="druzhban-month"> 3 month</div>
-                    </div>
-                    <div class="server-druzhban-user">
-                        <img src="images/icons/druzhban-avatar.png"  class="server-druzhban-avatar block-pad">
-                        <a style="padding-left: 6px;">Memento mori</a>
-                        <div class="druzhban-month"> 3 month</div>
-                    </div>
+                </template>
                         </div>
             </div>
         </div>
         </div>
     </div>
+    
 </div>
 </template>
 
 <script>
-    export default {
-      name: 'Home'
+import axios from 'axios'
+
+export default {
+    name: 'Home',
+    data: function () {
+        return {
+            usersOnline: 0,
+            banned: 0,
+            users: 0,
+            scores: "0",
+            druzhbans: []
+        }
+    },
+    created: function(){
+        this.initMethod();
+    },
+    methods:{
+        initMethod: function(){
+            var vm = this;
+            vm.getStats("online", (data) => vm.usersOnline = data);
+            vm.getStats("banned", (data) => vm.banned = data);
+            vm.getStats("users",  (data) => vm.users = data);
+            vm.getStats("scores", (data) => vm.scores = data);
+            axios.get("https://api.gatari.pw/donors")
+            .then(function(response){
+                vm.druzhbans = response.data.result;
+                console.log(vm.druzhbans);
+            });
+        },
+        getStats: function(type, callback){
+            axios.get("https://api.gatari.pw/stats/"+type)
+            .then(function(response){
+                return callback(response.data.result);
+            });
+        }
     }
-</script>
+
+}
+
+    </script>
+

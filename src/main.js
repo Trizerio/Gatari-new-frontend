@@ -9,7 +9,11 @@ Vue.config.productionTip = false
 var router = new VueRouter({
   routes: [
     {
-      path: '/',
+      redirect: '/home',
+      path: '/'
+    },
+    {
+      path: '/home',
       name: 'index',
       component: Home
     }

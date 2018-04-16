@@ -6,34 +6,34 @@
                             <div class="footer-info-block">
                                 <a class="footer-title">Помощь</a>
                                 <ul>
-                                  <li>Как начать игру</li>
-                                  <li>Лаунчер</li>
-                                  <li>Гайды от диггера</li>
-                                  <li>Кулсторибоб</li>
+                                  <li><a href='#'>Как начать игру</a></li>
+                                  <li><a href='#'>Лаунчер</a></li>
+                                  <li><a href='#'>Гайды от диггера</a></li>
+                                  <li><a href='#'>Кулсторибоб</a></li>
                                 </ul>
                             </div>
                              <div class="footer-info-block">
                                 <a class="footer-title">Помощь</a>
                                 <ul>
-                                  <li>Как начать игру</li>
-                                  <li>Лаунчер</li>
-                                  <li>Гайды от диггера</li>
-                                  <li>Кулсторибоб</li>
+                                  <li><a href='#'>Как начать игру</a></li>
+                                  <li><a href='#'>Лаунчер</a></li>
+                                  <li><a href='#'>Гайды от диггера</a></li>
+                                  <li><a href='#'>Кулсторибоб</a></li>
                                 </ul>
                             </div>
                              <div class="footer-info-block">
                                 <a class="footer-title">Помощь</a>
                                 <ul>
-                                  <li>Как начать игру</li>
-                                  <li>Лаунчер</li>
-                                  <li>Гайды от диггера</li>
-                                  <li>Кулсторибоб</li>
+                                  <li><a href='#'>Как начать игру</a></li>
+                                  <li><a href='#'>Лаунчер</a></li>
+                                  <li><a href='#'>Гайды от диггера</a></li>
+                                  <li><a href='#'>Кулсторибоб</a></li>
                                 </ul>
                             </div>
                              <div class="footer-logo">
-                                 osu!gatari
+                                 <span>osu!gatari</span>
                                  <br>
-                                 <a style="font-size: 18px; padding-right: 6px"> приватный osu! сервер</a>
+                                 <a class="subtitle"> приватный osu! сервер</a>
                             </div>
             
                         </div>

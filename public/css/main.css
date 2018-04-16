@@ -25,6 +25,7 @@ body {
     font-size: 28px;
     font-weight: 400;
     padding-top: 4px;
+    padding-left: 24px;
     cursor: pointer;
 }
 .navbar .navbar-nav .nav-link { 
@@ -44,7 +45,6 @@ body {
 }
 .login {
     color: white;
-    font-size 12px;
     margin-top: 8px;
     margin-left: 28px;
     text-decoration: none;
@@ -157,15 +157,19 @@ body {
 .server-druzhban-text {
     padding-top: 24px;
     font-size: 24px;
-    float: left;
     display: inline-block;
 }
 .server-druzhban-user {
     padding-top: 8px;
 }
 .server-druzhban-avatar {
+<<<<<<< HEAD
     float: left;
     height:30px
+=======
+    float: left;      
+    height: 30px;
+>>>>>>> 8c8bc1324d5d2aac0eb505f3823e5b044cca15a9
 }
 .server-druzhban-head {
     height: 60px;
@@ -196,15 +200,23 @@ body {
     float: left;
     font-size: 14px
 }
+
+.footer-info-block a{
+}
 .footer-logo {
     float: right;
-    font-size: 16px;
     color: white;
     font-size: 30px;
     padding-top: 24px;
     padding-right: 36px;
     text-align: right;
 }
+
+.footer-logo>.subtitle{
+    font-size: 18px;
+    padding-right: 6px
+}
+
 .footer-info-block>.footer-title{
     color: white !important; 
     font-size: 20px; 
