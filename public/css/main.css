@@ -269,10 +269,11 @@ body {
 }
 
 }
-@media (max-width: 625px) and (min-width: 1200px) {
-        .footer-bg {
-        position: absolute;
-    }
+
+@media only screen and (max-device-width: 580px) {
+    .footer-bg {
+    position: absolute;
+}
 }
 
 .header-bg:before {
@@ -285,4 +286,5 @@ body {
     width: 100%;
     background-size: 100% 100%;
 }
+
 
