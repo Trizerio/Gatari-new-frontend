@@ -109,16 +109,11 @@ export default {
             vm.getStats("users",  (data) => vm.users = data);
             vm.getStats("scores", (data) => vm.scores = data);
             axios.get("https://api.gatari.pw/donors")
-            .then(function(response){
-                vm.druzhbans = response.data.result;
-                console.log(vm.druzhbans);
-            });
+            .then((response) => vm.druzhbans = response.data.result);
         },
         getStats: function(type, callback){
             axios.get("https://api.gatari.pw/stats/"+type)
-            .then(function(response){
-                return callback(response.data.result);
-            });
+            .then((response) => callback(response.data.result));
         }
     }
 
