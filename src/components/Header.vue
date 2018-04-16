@@ -1,4 +1,6 @@
 <template>
+    
+    <div class="header-bg">
         <div class="container">
                 <div class="row">
                 <!-- Here start the header -->
@@ -26,6 +28,7 @@
                     </div>
                 </div>    
             </div>
+        </div>
 </template>
 
 <script>
