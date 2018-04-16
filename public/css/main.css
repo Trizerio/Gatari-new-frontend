@@ -105,6 +105,7 @@ body {
     font-size: 16px;
     transition: 0.5s box-shadow, 0.5s filter; 
     cursor: pointer;
+    box-shadow: -1px 2px 2px 1px rgba(0, 0, 0, 0.11);
 }
 .main-block-registration:focus {
     outline:0;
@@ -248,6 +249,9 @@ body {
     }
     .server-druzhban {
         width: 690px;
+    }
+    .main-block-registration {
+        
     }
 
 }
