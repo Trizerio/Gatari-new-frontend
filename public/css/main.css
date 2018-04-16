@@ -92,7 +92,7 @@ body {
 .main-block-registration {
     margin-top: 100px;
     background-image: url(/images/icons/button.svg);
-    background-color: #861247;
+    background-color: #a41042;
     margin-left: 64px;
     width: 170px;
     height: 60px;
@@ -105,7 +105,7 @@ body {
     font-size: 16px;
     transition: 0.5s box-shadow, 0.2s filter, 0.7s background-position-x;
     cursor: pointer;
-    box-shadow: 0 5px #791342, 0 4px 3px rgb(0, 0, 0);
+    box-shadow: 0 5px #5d1029, 0 4px 3px rgb(0, 0, 0);
 }
 
 .main-block-registration:focus {
@@ -113,7 +113,6 @@ body {
 }
 .main-block-registration:hover {
     box-shadow: none;
-    filter: brightness(1.4);
     background-position-x: -30px;
 }
 .info-block {
