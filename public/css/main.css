@@ -261,10 +261,12 @@ body {
     .footer-logo>.subtitle{
     font-size: 16px;
 }
-    .footer-bg {
+
+}
+@media (max-width: 625px) and (min-width: 1200px) {
+        .footer-bg {
         position: absolute;
     }
-
 }
 
 .header-bg:before {
