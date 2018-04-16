@@ -100,8 +100,7 @@ body {
     font-style: italic;
     text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.11);
     font-size: 16px;
-    -webkit-transition: 0.5s box-shadow ; 
-    -webkit-transition: 0.5s filter;
+    transition: 0.5s box-shadow, 0.5s filter; 
     cursor: pointer;
 }
 .main-block-registration:focus {
@@ -165,6 +164,12 @@ body {
 .server-druzhban-user {
     padding-top: 8px;
 }
+
+.server-druzhban-user a{
+    color: white !important;
+    text-decoration: none !important;
+}
+
 .server-druzhban-avatar {
     float: left;      
     height: 30px;

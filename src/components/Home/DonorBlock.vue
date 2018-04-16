@@ -10,7 +10,7 @@
             <template v-for="druzhban in druzhbans">
                 <div class="server-druzhban-user" :key="druzhban.id">
                     <img :src="'https://a.gatari.pw/'+druzhban.id"  class="server-druzhban-avatar block-pad">
-                    <a style="padding-left: 6px;">{{ druzhban.username }}</a>
+                    <a :href="'/u/'+druzhban.id" style="padding-left: 6px;">{{ druzhban.username }}</a>
                     <div class="druzhban-month"> {{ druzhban.donor_expire | calcMonths}}</div>
                 </div>
             </template>
