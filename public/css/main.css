@@ -202,7 +202,9 @@ body {
 }
 
 .footer-info-block a{
+    color: #f3b3dd !important;
 }
+
 .footer-logo {
     float: right;
     color: white;
