@@ -166,7 +166,8 @@ body {
 .server-druzhban-avatar {
     float: left;      
     height: 30px;
-    border-radius: 12px;
+    border-radius: 6px;
+    background-image: url(/images/icons/button.svg);
 }
 .server-druzhban-head {
     height: 60px;
