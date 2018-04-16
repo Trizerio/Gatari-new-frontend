@@ -38,10 +38,10 @@
 
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-sm-12 col-lg-6">
                 <statsblock :onReady='onReady'/>
             </div>
-            <div class="col">
+            <div class="col-sm-12 col-lg-6">
                 <donorblock/>
         </div>
         </div>
