@@ -199,15 +199,25 @@ body {
     float: left;
     font-size: 14px
 }
+
+.footer-info-block a{
+    color: #f3b3dd !important;
+}
+
 .footer-logo {
     float: right;
-    font-size: 16px;
     color: white;
     font-size: 30px;
     padding-top: 24px;
     padding-right: 36px;
     text-align: right;
 }
+
+.footer-logo>.subtitle{
+    font-size: 18px;
+    padding-right: 6px
+}
+
 .footer-info-block>.footer-title{
     color: white !important; 
     font-size: 20px; 
