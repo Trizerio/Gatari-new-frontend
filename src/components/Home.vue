@@ -64,7 +64,7 @@
                     <div class="server-druzhban-user" :key="druzhban.id">
                         <img :src="'https://a.gatari.pw/'+druzhban.id"  class="server-druzhban-avatar block-pad">
                         <a style="padding-left: 6px;">{{ druzhban.username }}</a>
-                        <div class="druzhban-month"> 3 month</div>
+                        <div class="druzhban-month"> {{ druzhban.donor_expire | calcMonths}}</div>
                     </div>
                 </template>
                         </div>
@@ -88,6 +88,14 @@ export default {
             users: 0,
             scores: "0",
             druzhbans: []
+        }
+    },
+    filters: {
+        calcMonths: function(unix){
+            var currentTime = (+ new Date()) / 1000;
+            var seconds = Math.floor(unix - currentTime);
+            var intervals = Math.floor(seconds / 2592000);
+            return intervals+(intervals == 1 ? " month" : " months");
         }
     },
     created: function(){
