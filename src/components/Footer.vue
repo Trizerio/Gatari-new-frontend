@@ -34,25 +34,19 @@
                                  <span>osu!gatari</span>
                                  <br>
                                  <a class="subtitle"> {{ $t('footer.subtitle') }}</a>
-
-                                     <div class="dropdown">
-                                    <div class="language">          
+                                                                   
+                            </div>
+                            <div class="dropup">
+                                    <div class="language">   
                                      Language 
                                      <img src="/images/flags/ru.png" style="width: 24px; padding-left: 6px; padding-bottom: 2px;">
                                     </div>
-                                         <div class="dropdown-content">
-                                             <ul>
-                                                <li> China <img src="/images/flags/ru.png"style="width: 24px; padding-left: 6px; padding-bottom: 2px;" > </li>
-                                                 <li> China <img src="/images/flags/ru.png"style="width: 24px; padding-left: 6px; padding-bottom: 2px;" > </li>
-                                          
-                                             </ul>
-                                            
-                                         </div>
-                                                     
+                                         <div class="dropup-content">
 
-                                 </div>
-                                    
-                            </div>
+                                                China <img src="/images/flags/ru.png"style="width: 24px; padding-left: 6px; padding-bottom: 2px;" >
+                                                China <img src="/images/flags/ru.png"style="width: 24px; padding-left: 6px; padding-bottom: 2px;" >                                                                    
+                                         </div>
+                                   </div>
             
                         </div>
                     </div>
