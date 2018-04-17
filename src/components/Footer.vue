@@ -38,11 +38,15 @@
                                     <div class="language">   
                                      Language 
                                      <img src="/images/flags/ru.png" style="width: 24px; padding-left: 6px; padding-bottom: 2px;">
+                                     <img src="/images/flags/ru.png" class="dropup-flags">
                                     </div>
                                          <div class="dropup-content">
-
-                                                China <img src="/images/flags/ru.png"style="width: 24px; padding-left: 6px; padding-bottom: 2px;" >
-                                                China <img src="/images/flags/ru.png"style="width: 24px; padding-left: 6px; padding-bottom: 2px;" >                                                                    
+                                             <ul>
+                                                
+                                                <li class="language-select">China <img src="/images/flags/cn.png" class="dropup-flags"></li>
+                                                
+                                                 <li class="language-select">China <img src="/images/flags/cn.png" class="dropup-flags"></li>
+                                            </ul>
                                          </div>
                                    </div>                                  
                             </div>

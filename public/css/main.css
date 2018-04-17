@@ -7,7 +7,9 @@ li {
     list-style-type: none;
 }
 
-
+ul {
+    padding-left: 0;
+}
 
 body {
       background: 
@@ -244,7 +246,9 @@ body {
     color: white !important; 
     font-size: 20px; 
     font-weight: 600; 
-    padding-left: 40px;
+}
+.footer-info-block {
+    padding-left: 24px;
 }
 .header-bg {
     background-image: url(/images/icons/button.svg);
@@ -293,7 +297,7 @@ body {
     width: 310px;
 }
 .language {
-    font-size: 18px;
+    font-size: 14px;
     background-color: rgba(15,15,15,1);
     text-align: center;
     border-radius: 4px;
@@ -303,21 +307,23 @@ body {
     position: relative;
     display: inline-block;
     color: white;
+    padding-top: 8px;
 }
 
 .dropup-content {
     display: none;
     position: absolute;
     background-color: rgba(18,18,18,1);
-    min-width: 131px;
+    min-width: 152px;
     border-radius: 4px;
     padding: 12px 16px;
     z-index: 1;
-    font-size: 18px;
+    font-size: 14px;
     float: left;
     margin-top: 8px;
+    margin: auto;
+    bottom: 42px;
     text-align: center;
-    bottom: 44px;
 }
 .dropup:hover .dropup-content {
     display: block;
@@ -326,4 +332,24 @@ body {
 .dropup.dropup-language {
     display: block;
     margin-top: 25px;
+}
+.dropup-flags {
+    width: 24px;
+    padding-left: 6px; 
+    padding-bottom: 2px;
+}
+.language-select {
+    background-color: rgba(15,15,15,1);
+    border-radius: 4px;
+    margin-top: 4px;
+    padding: 4px;
+}
+.stats-icon {
+    float: right;
+    padding-right: 64px;
+    padding-top: 28px;
+    color: white;
+    background-image: url(/images/icons/pie-chart.svg);
+    background-repeat: no-repeat;
+    background-color: white;
 }
