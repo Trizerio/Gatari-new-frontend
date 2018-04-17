@@ -4,7 +4,6 @@ import Home from './Home.vue'
 import VueRouter from 'vue-router'
 import VueCookie from 'vue-cookie'
 import VueI18n from 'vue-i18n'
-import axios from 'axios'
 import enLocale from '@/locales/en'
 import ruLocale from '@/locales/ru'
 Vue.use(VueI18n)

@@ -41,7 +41,7 @@
                                     </div>
                                          <div class="dropup-content">
                                              <ul>
-                                                <li v-for="(lang, locale) in languages" @click="setLocale(locale)" class="language-select">{{ lang.name }} <img :src="'/images/flags/'+lang.flag+'.png'" class="dropup-flags"></li>
+                                                <li v-for="(lang, locale) in languages" :key="locale" @click="setLocale(locale)" class="language-select">{{ lang.name }} <img :src="'/images/flags/'+lang.flag+'.png'" class="dropup-flags"></li>
                                             </ul>
                                          </div>
                                    </div>                                  
@@ -66,10 +66,10 @@ export default {
   },
   methods:{
       setLocale: function(lang){
-          if(languages[lang] && this.$i18n.locale != lang){
+          if(this.languages[lang] && this.$i18n.locale != lang){
             this.$cookie.set('lang', lang);
-            window.language = languages[lang];
-            this.language = languages[lang];
+            window.language = this.languages[lang];
+            this.language = this.languages[lang];
             this.$i18n.locale = lang;
             console.log("selected new language: "+lang);
           }
