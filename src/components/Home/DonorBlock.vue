@@ -32,7 +32,7 @@
             var currentTime = (+ new Date()) / 1000;
             var seconds = Math.floor(unix - currentTime);
             var intervals = Math.floor(seconds / 2592000);
-            return intervals+(intervals == 1 ? " month" : " months");
+            return intervals+" "+(intervals == 1 ? "month" : "months");
         }
     },
     created: function(){

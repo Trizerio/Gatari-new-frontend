@@ -33,7 +33,7 @@
                              <div class="footer-logo">
                                  <span>osu!gatari</span>
                                  <br>
-                                 <a class="subtitle"> приватный osu! сервер</a>
+                                 <a class="subtitle"> {{ $t('footer.subtitle') }}</a>
                             </div>
             
                         </div>

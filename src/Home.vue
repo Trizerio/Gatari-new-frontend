@@ -5,12 +5,10 @@
             <div class="col"> 
                 <div class="main-block">
                     <div class="main-block-gatari block-pad"> osu!gatari </div>
-                    <div class="main-block-gatari2 block-pad">
-                    Приватный осу сервер с адекватными игроками <br>
-                    и хорошей администрацией
+                    <div class="main-block-gatari2 block-pad"><span class="info-why">{{ $t('home.info') }}</span>
                     </div>
                     <div class="main-block-gatari3 block-pad">
-                        <a class="users-count"> {{ users }}</a> пользователей <a class="users-count"> {{ usersOnline }}</a> активных пользователя
+                        <a class="users-count"> {{ users }}</a> {{ $t('misc.users') }} <a class="users-count"> {{ usersOnline }}</a> {{ $t('misc.onlineUsers') }}
                     </div>
                     <button class="main-block-registration">
                         регистрация
@@ -23,13 +21,8 @@
         <div class="row"> 
             <div class="col">
                 <div class="info-block"> 
-                    <div class="info-text block-pad" >Почему gatari?</div>
-                    <div class="info-text2 block-pad">
-                    Рандомный текст,я не знаю что писать<br>
-                    диггер красав в общем сервер класс всем <br>
-                    советую или бан вот кароче<br>
-                    купите дружбана<br>
-                    </div>
+                    <div class="info-text block-pad" >{{ $t('home.why') }}</div>
+                    <div class="info-text2 block-pad"><span class="info-why">{{ $t('home.cuz') }}</span></div>
                     
                 </div>
             </div>
@@ -69,6 +62,9 @@ export default {
         onReady(data){
             this.users = data.users;
             this.usersOnline = data.usersOnline;
+        },
+        translate(path){
+            return this.$i18n.t(path);
         }
     }
 
