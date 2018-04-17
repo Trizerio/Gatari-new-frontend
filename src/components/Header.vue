@@ -16,11 +16,11 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-item nav-link active" href="#">Leaderboard <span class="sr-only">(current)</span></a>
-                  <a class="nav-item nav-link" href="#">Beatmaps</a>
-                            <input type="text" class="main-search" placeholder="Search" >
+                  <a class="nav-item nav-link active" href="#"> {{ $t('header.leaderboard') }}</a>
+                  <a class="nav-item nav-link" href="#">{{ $t('header.beatmaps') }}</a>
+                            <input type="text" class="main-search" :placeholder="$t('header.search')" >
            
-                <a href="#" class="login">      <img src="images/icons/login.png"  style="box-shadow: none !important; height: 16px; width: 16px;"> Login</a>
+                <a href="#" class="login">      <img src="images/icons/login.png"  style="box-shadow: none !important; height: 16px; width: 16px;"> {{ $t('header.login') }}</a>
                 </div>
               </div>
                 </nav>

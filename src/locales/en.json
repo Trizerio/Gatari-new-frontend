@@ -1,5 +1,29 @@
 {
-    "misc":{"users":"users", "onlineUsers":"online users"},
-    "footer":{"subtitle":"private osu! server"},
-    "home":{"info":"Best private server by far.","why":"Why gatari?", "cuz":"We have an anticheat, best community manager (Firedigger) and best worldwide player (Legendre) pls play gatari!"}
+    "misc":{
+        "registration":"Registration",
+        "users":"total users", 
+        "onlineUsers":"online users",
+        "banned":"banned users",
+        "scores":"scores"
+    },
+    "footer":{
+        "subtitle":"private osu! server"
+    },
+    "home":{
+        "info":"Best private server by far.",
+        "why":"Why gatari?", 
+        "cuz":"We have an anticheat, best community manager (Firedigger) and best worldwide player (Legendre) pls play gatari!",
+        "stats":{
+            "title":"Server stats"
+        },
+        "donors":{
+            "title":"Top supporters"
+        }
+    },
+    "header":{
+        "login":"Login",
+        "beatmaps": "Beatmaps",
+        "leaderboard": "Leaderboard",
+        "search":"Search"
+    }
 }

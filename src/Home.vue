@@ -11,7 +11,7 @@
                         <a class="users-count"> {{ users }}</a> {{ $t('misc.users') }} <a class="users-count"> {{ usersOnline }}</a> {{ $t('misc.onlineUsers') }}
                     </div>
                     <button class="main-block-registration">
-                        регистрация
+                        {{ $t('misc.registration') }}
                     </button>
                 </div>                                
             </div>
@@ -62,9 +62,6 @@ export default {
         onReady(data){
             this.users = data.users;
             this.usersOnline = data.usersOnline;
-        },
-        translate(path){
-            return this.$i18n.t(path);
         }
     }
 
