@@ -34,9 +34,7 @@
                                  <span>osu!gatari</span>
                                  <br>
                                  <a class="subtitle"> {{ $t('footer.subtitle') }}</a>
-                                                                   
-                            </div>
-                            <div class="dropup">
+                                 <div class="dropup dropup-language">
                                     <div class="language">   
                                      Language 
                                      <img src="/images/flags/ru.png" style="width: 24px; padding-left: 6px; padding-bottom: 2px;">
@@ -46,7 +44,9 @@
                                                 China <img src="/images/flags/ru.png"style="width: 24px; padding-left: 6px; padding-bottom: 2px;" >
                                                 China <img src="/images/flags/ru.png"style="width: 24px; padding-left: 6px; padding-bottom: 2px;" >                                                                    
                                          </div>
-                                   </div>
+                                   </div>                                  
+                            </div>
+                            
             
                         </div>
                     </div>

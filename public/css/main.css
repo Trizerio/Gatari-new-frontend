@@ -322,3 +322,8 @@ body {
 .dropup:hover .dropup-content {
     display: block;
 }
+
+.dropup.dropup-language {
+    display: block;
+    margin-top: 25px;
+}
