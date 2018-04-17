@@ -4,7 +4,8 @@
         "users":"пользователей", 
         "onlineUsers":"онлайн",
         "banned":"заблокированых",
-        "scores":"скоров"
+        "scores":"скоров",
+        "language":"Язык"
     },
     "footer":{
         "subtitle":"приватный осу! сервер"

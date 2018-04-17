@@ -15,6 +15,17 @@ export default {
   components: {
     footerblock,
     navbar
+  },
+  created(){
+    var lang = this.$cookie.get('lang');
+    if(window.languages[lang]){
+        this.$i18n.locale = lang;
+        console.log("got lang from cookie ! "+lang);
+    }else{
+      console.log("back to default (en)");
+      this.$cookie.set('lang', "en"); 
+    }
+    window.language = window.languages[this.$cookie.get('lang')];
   }
 }
 </script>

@@ -36,16 +36,12 @@
                                  <a class="subtitle"> {{ $t('footer.subtitle') }}</a>
                                  <div class="dropup dropup-language">
                                     <div class="language">   
-                                     Language 
-                                     <img src="/images/flags/ru.png" style="width: 24px; padding-left: 6px; padding-bottom: 2px;">
-                                     <img src="/images/flags/ru.png" class="dropup-flags">
+                                     {{ $t('misc.language') }} 
+                                     <img :src="'/images/flags/'+language.flag+'.png'" class="dropup-flags">
                                     </div>
                                          <div class="dropup-content">
                                              <ul>
-                                                
-                                                <li class="language-select">China <img src="/images/flags/cn.png" class="dropup-flags"></li>
-                                                
-                                                 <li class="language-select">China <img src="/images/flags/cn.png" class="dropup-flags"></li>
+                                                <li v-for="(lang, locale) in languages" @click="setLocale(locale)" class="language-select">{{ lang.name }} <img :src="'/images/flags/'+lang.flag+'.png'" class="dropup-flags"></li>
                                             </ul>
                                          </div>
                                    </div>                                  
@@ -61,6 +57,24 @@
 
 <script>
 export default {
-  name: 'FooterBlock'
+  name: 'FooterBlock',
+  data(){
+      return {
+          language: window.language,
+          languages: window.languages
+      }
+  },
+  methods:{
+      setLocale: function(lang){
+          if(languages[lang] && this.$i18n.locale != lang){
+            this.$cookie.set('lang', lang);
+            window.language = languages[lang];
+            this.language = languages[lang];
+            this.$i18n.locale = lang;
+            console.log("selected new language: "+lang);
+          }
+      }
+  }
+  
 }
 </script>

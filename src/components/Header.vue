@@ -32,11 +32,6 @@
 
 <script>
     export default {
-        name: 'navbar',
-        methods:{
-            changeLang(lang){
-                this.$i18n.locale = lang;  //(this.$i18n.locale == "en" ? "ru" : "en");
-            }
-        }
+        name: 'navbar'
     }
 </script>

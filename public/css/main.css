@@ -302,6 +302,7 @@ body {
     text-align: center;
     border-radius: 4px;
     padding: 8px;
+    cursor: pointer;
 }
 .dropup {
     position: relative;
@@ -343,6 +344,7 @@ body {
     border-radius: 4px;
     margin-top: 4px;
     padding: 4px;
+    cursor: pointer;
 }
 .stats-icon {
     float: right;
