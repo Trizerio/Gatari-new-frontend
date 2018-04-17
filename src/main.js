@@ -37,7 +37,7 @@ function loadLanguageAsync (lang) {
   }
   return Promise.resolve(lang)
 }
-loadLanguageAsync("ru");
+loadLanguageAsync("en");
 
 Vue.config.productionTip = false
 var router = new VueRouter({

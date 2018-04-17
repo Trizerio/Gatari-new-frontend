@@ -1,12 +1,10 @@
 <template>
     <div class="server-status">
-        <div class="server-status-text block-pad">
-            Статистика сервера
-        </div>
+        <div class="server-status-text block-pad">{{ $t('home.stats.title') }}</div>
         <img  style="float: right; padding-right: 64px; padding-top: 28px;" src="images/icons/server-pie.png">
         <div class="server-status-online block-pad">
-            <a style="font-size: 30px;"> {{ usersOnline }} </a> online users <a style="font-size: 30px;">  {{ banned }}  </a> banned users  <a style="font-size: 30px;"> {{ users }} </a> users<br>
-            <a style="font-size: 30px;"> {{ scores }} </a> scores
+            <a style="font-size: 30px;"> {{ usersOnline }} </a> {{ $t('misc.onlineUsers') }} <a style="font-size: 30px;">  {{ banned }}  </a> {{ $t('misc.banned') }}  <a style="font-size: 30px;"> {{ users }} </a> {{ $t('misc.users') }}<br>
+            <a style="font-size: 30px;"> {{ scores }} </a> {{ $t('misc.scores') }}
         </div>
     </div>
 </template>

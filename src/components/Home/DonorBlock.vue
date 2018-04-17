@@ -1,9 +1,7 @@
 <template>
     <div class="server-druzhban">
         <div class="server-druzhban-head">
-            <div class="server-druzhban-text block-pad">
-                Лучшие дружбаны
-            </div>
+            <div class="server-druzhban-text block-pad">{{ $t('home.donors.title') }}</div>
             <img  style="float: right; padding-right: 64px; padding-top: 30px;" src="images/icons/druzhban-fist.png">
         </div>
         <div class="server-druzhban-user-block">
