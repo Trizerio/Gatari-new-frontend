@@ -15,13 +15,18 @@ const i18n = new VueI18n({
   messages: {"en" : enLocale}
 })
 
-const loadedLanguages = ["en"] // our default language that is prelaoded 
+const loadedLanguages = [] // our default language that is prelaoded 
+const languages = ["ru"];
+
+languages.forEach((lang) => {
+  loadLanguageAsync(lang);
+});
 
 function setI18nLanguage (lang) {
-  i18n.locale = lang
-  axios.defaults.headers.common['Accept-Language'] = lang
-  document.querySelector('html').setAttribute('lang', lang)
-  return lang
+  i18n.locale = lang;
+  axios.defaults.headers.common['Accept-Language'] = lang;
+  document.querySelector('html').setAttribute('lang', lang);
+  return lang;
 }
 
 function loadLanguageAsync (lang) {
@@ -30,14 +35,13 @@ function loadLanguageAsync (lang) {
       return import(`@/locales/${lang}`).then(msgs => {
         i18n.setLocaleMessage(lang, msgs)
         loadedLanguages.push(lang)
-        return setI18nLanguage(lang)
+        return;//setI18nLanguage(lang)
       })
     } 
     return Promise.resolve(setI18nLanguage(lang))
   }
   return Promise.resolve(lang)
 }
-loadLanguageAsync("en");
 
 Vue.config.productionTip = false
 var router = new VueRouter({

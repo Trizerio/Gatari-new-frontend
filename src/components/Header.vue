@@ -5,8 +5,7 @@
                 <div class="row">
                 <!-- Here start the header -->
                     <div class="col">
-                        <div class="logo">osu!gatari</div>
-                        
+                        <router-link tag="div" to="home" class="logo" >osu!gatari</router-link>
                     </div>       
                     <div class="col">
                     <!-- menu -->
@@ -16,7 +15,7 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-item nav-link active" href="#"> {{ $t('header.leaderboard') }}</a>
+                  <router-link tag="a" to="leaderboard" class="nav-item nav-link" >{{ $t('header.leaderboard') }}</router-link>
                   <a class="nav-item nav-link" href="#">{{ $t('header.beatmaps') }}</a>
                             <input type="text" class="main-search" :placeholder="$t('header.search')" >
            
@@ -33,6 +32,11 @@
 
 <script>
     export default {
-        name: 'navbar'
+        name: 'navbar',
+        methods:{
+            changeLang(lang){
+                this.$i18n.locale = lang;  //(this.$i18n.locale == "en" ? "ru" : "en");
+            }
+        }
     }
 </script>
