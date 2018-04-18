@@ -156,6 +156,7 @@ body {
     padding-top: 70px;
     font-size: 14px;
     float: left;
+    width: 450px;
 }
 .server-druzhban {
     background-image: url(/images/server-druzhban-bg.png);
