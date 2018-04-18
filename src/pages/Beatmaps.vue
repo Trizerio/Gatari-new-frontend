@@ -1,6 +1,6 @@
 <template>
     <div id="beatmaps">
-        <!-- code here -->
+       
     </div> 
 </template>
 

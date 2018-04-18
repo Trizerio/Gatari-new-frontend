@@ -2,9 +2,9 @@
     
     <div class="header-bg">
         <div class="container">
-                <div class="row">
-                <!-- Here start the header -->            
-                        <router-link tag="div" to="home" class="logo" >osu!gatari</router-link>          
+                <div class="row navbar">
+                <!-- Here start the header -->
+                        <router-link tag="div" to="home" class="logo" >osu!gatari</router-link>      
                     <!-- menu -->
         <div class="header-menu">
                 <nav class="navbar navbar-expand-lg navbar-light ">
