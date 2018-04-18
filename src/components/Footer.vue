@@ -33,8 +33,10 @@
                              <div class="footer-logo">
                                  <span>osu!gatari</span>
                                  <br>
-                                 <a class="subtitle"> {{ $t('footer.subtitle') }}</a>
-                                 <div class="dropup dropup-language">
+                                 <a class="subtitle"> {{ $t('footer.subtitle') }}</a>                              
+                            </div>
+                        
+                            <div class="dropup dropup-language">
                                     <div class="language">   
 
                                      {{ $t('misc.language') }} 
@@ -49,8 +51,9 @@
                                                  </li>
                                             </ul>
                                          </div>
-                                   </div>                                  
-                            </div>
+                                   </div>    
+                                                   
+                                    
                             
             
                         </div>
