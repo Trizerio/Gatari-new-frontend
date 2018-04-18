@@ -2,12 +2,9 @@
     
     <div class="header-bg">
         <div class="container">
-                <div class="row">
+                <div class="row navbar">
                 <!-- Here start the header -->
-                    <div class="col">
-                        <router-link tag="div" to="home" class="logo" >osu!gatari</router-link>
-                    </div>       
-                    <div class="col">
+                        <router-link tag="div" to="home" class="logo" >osu!gatari</router-link>      
                     <!-- menu -->
                 <nav class="navbar navbar-expand-lg navbar-light ">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +21,6 @@
               </div>
                 </nav>
                 <!-- menu ended -->
-                    </div>
                 </div>    
             </div>
         </div>
