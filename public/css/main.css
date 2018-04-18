@@ -156,8 +156,14 @@ body {
     padding-top: 70px;
     font-size: 14px;
     float: left;
-    width: 450px;
 }
+
+@media (min-width: 576px){
+    .server-status-online {
+        width: 450px;
+    }
+}
+
 .server-druzhban {
     background-image: url(/images/server-druzhban-bg.png);
     height: 240px;
@@ -355,9 +361,6 @@ body {
  .main-block-uppertext {
      height: 224px;
  }
- .dropdown-login {
-
- }
  .dropdown-login-content {
      z-index: 3;
      padding-left: 24px;
@@ -450,6 +453,7 @@ body {
     border-radius: 4px;
     z-index: 1;
     position: absolute;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 .login-registrate-stroke1 {
