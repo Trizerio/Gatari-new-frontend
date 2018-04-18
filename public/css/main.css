@@ -31,6 +31,8 @@ body {
     padding-top: 4px;
     padding-left: 24px;
     cursor: pointer;
+    z-index: 2;
+    display: table
 }
 .navbar .navbar-nav .nav-link { 
         color: white !important; 
@@ -309,6 +311,7 @@ body {
     display: inline-block;
     color: white;
     padding-top: 8px;
+    width: 152px;
 }
 
 .dropup-content {
@@ -354,4 +357,8 @@ body {
     background-image: url(/images/icons/pie-chart.svg);
     background-repeat: no-repeat;
     background-color: white;
+}
+.header-menu {
+    float: right !important;
+    display: table;
 }
