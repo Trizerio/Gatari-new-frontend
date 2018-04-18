@@ -36,8 +36,10 @@
                                  <a class="subtitle"> {{ $t('footer.subtitle') }}</a>
                                  <div class="dropup dropup-language">
                                     <div class="language">   
+
                                      {{ $t('misc.language') }} 
                                      <img :src="'/images/flags/'+toUpper(window().language.flag)+'.png'" class="dropup-flags">
+
                                     </div>
                                          <div class="dropup-content">
                                              <ul>
