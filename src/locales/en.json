@@ -4,7 +4,8 @@
         "users":"total users", 
         "onlineUsers":"online users",
         "banned":"banned users",
-        "scores":"scores"
+        "scores":"scores",
+        "language":"Language"
     },
     "footer":{
         "subtitle":"private osu! server"

@@ -36,16 +36,17 @@
                                  <a class="subtitle"> {{ $t('footer.subtitle') }}</a>
                                  <div class="dropup dropup-language">
                                     <div class="language">   
-                                     Language 
-                                     <img src="/images/flags/ru.png" style="width: 24px; padding-left: 6px; padding-bottom: 2px;">
-                                     <img src="/images/flags/ru.png" class="dropup-flags">
+
+                                     {{ $t('misc.language') }} 
+                                     <img :src="'/images/flags/'+toUpper(window().language.flag)+'.png'" class="dropup-flags">
+
                                     </div>
                                          <div class="dropup-content">
                                              <ul>
-                                                
-                                                <li class="language-select">China <img src="/images/flags/cn.png" class="dropup-flags"></li>
-                                                
-                                                 <li class="language-select">China <img src="/images/flags/cn.png" class="dropup-flags"></li>
+                                                <li v-for="(lang, locale) in window().languages" :key="locale" @click="setLocale(locale)" class="language-select">
+                                                    {{ lang.name }}
+                                                    <img :src="'/images/flags/'+toUpper(lang.flag)+'.png'" class="dropup-flags">
+                                                </li>
                                             </ul>
                                          </div>
                                    </div>                                  
@@ -61,6 +62,11 @@
 
 <script>
 export default {
-  name: 'FooterBlock'
+  name: 'FooterBlock',
+  methods:{
+     toUpper(text){
+         return text.toUpperCase();
+     }
+  }
 }
 </script>

@@ -2,9 +2,10 @@
     "misc":{
         "registration":"Регистрация",
         "users":"пользователей", 
-        "onlineUsers":"онлайн",
+        "onlineUsers":"в игре",
         "banned":"заблокированых",
-        "scores":"скоров"
+        "scores":"скоров",
+        "language":"Язык"
     },
     "footer":{
         "subtitle":"приватный осу! сервер"

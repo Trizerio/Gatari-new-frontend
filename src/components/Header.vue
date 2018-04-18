@@ -16,7 +16,7 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                   <router-link tag="a" to="leaderboard" class="nav-item nav-link" >{{ $t('header.leaderboard') }}</router-link>
-                  <a class="nav-item nav-link" href="#">{{ $t('header.beatmaps') }}</a>
+                  <router-link tag="a" to="beatmaps" class="nav-item nav-link" >{{ $t('header.beatmaps') }}</router-link>
                             <input type="text" class="main-search" :placeholder="$t('header.search')" >
            
                 <a href="#" class="login">      <img src="images/icons/login.png"  style="box-shadow: none !important; height: 16px; width: 16px;"> {{ $t('header.login') }}</a>
@@ -32,11 +32,6 @@
 
 <script>
     export default {
-        name: 'navbar',
-        methods:{
-            changeLang(lang){
-                this.$i18n.locale = lang;  //(this.$i18n.locale == "en" ? "ru" : "en");
-            }
-        }
+        name: 'navbar'
     }
 </script>

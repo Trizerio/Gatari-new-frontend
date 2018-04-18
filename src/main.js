@@ -1,49 +1,24 @@
 import Vue from 'vue'
-import App from './App.vue'
-import Home from './Home.vue'
+import App from '@/App.vue'
+import Home from '@/pages/Home.vue'
+import Beatmaps from '@/pages/Beatmaps.vue'
 import VueRouter from 'vue-router'
+import VueCookie from 'vue-cookie'
 import VueI18n from 'vue-i18n'
-import axios from 'axios'
-import enLocale from '@/locales/en'
+import {mixin, locales} from "@/locales/locale"
+
 Vue.use(VueI18n)
 Vue.use(VueRouter)
+Vue.use(VueCookie)
+Vue.mixin(mixin); 
 
-
-const i18n = new VueI18n({
+ const i18n = new VueI18n({
   locale: 'en', // set locale
   fallbackLocale: 'en',
-  messages: {"en" : enLocale}
-})
-
-const loadedLanguages = [] // our default language that is prelaoded 
-const languages = ["ru"];
-
-languages.forEach((lang) => {
-  loadLanguageAsync(lang);
+  messages: locales
 });
 
-function setI18nLanguage (lang) {
-  i18n.locale = lang;
-  axios.defaults.headers.common['Accept-Language'] = lang;
-  document.querySelector('html').setAttribute('lang', lang);
-  return lang;
-}
-
-function loadLanguageAsync (lang) {
-  if (i18n.locale !== lang) {
-    if (!loadedLanguages.includes(lang)) {
-      return import(`@/locales/${lang}`).then(msgs => {
-        i18n.setLocaleMessage(lang, msgs)
-        loadedLanguages.push(lang)
-        return;//setI18nLanguage(lang)
-      })
-    } 
-    return Promise.resolve(setI18nLanguage(lang))
-  }
-  return Promise.resolve(lang)
-}
-
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 var router = new VueRouter({
   routes: [
     {
@@ -54,6 +29,11 @@ var router = new VueRouter({
       path: '/home',
       name: 'index',
       component: Home
+    },
+    {
+      path: '/beatmaps',
+      name: 'beatmaps',
+      component: Beatmaps
     }
   ]
 })
