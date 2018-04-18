@@ -2,7 +2,7 @@
     <transition 
     enter-active-class="animated bounceInDown"
     leave-active-class="animated bounceOutUp">
-        <div tabindex="-1" @blur="blur" class="dropdown-login-bg">
+        <div class="dropdown-login-bg">
             <div class="dropdown-login-content"> 
                     <div class="dropdown-login-stroke">{{ $t('login.title') }}</div>  
                     <input type="text" class="login-form" :placeholder="$t('login.login')">
@@ -34,11 +34,6 @@
         name: 'login',
         data(){
             return{
-            }
-        },
-        methods:{
-            blur: function(){
-                this.$parent.loginForm = false;
             }
         }
     }
