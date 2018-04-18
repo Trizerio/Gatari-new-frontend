@@ -18,7 +18,8 @@
             "title":"Server stats"
         },
         "donors":{
-            "title":"Top supporters"
+            "title":"Top supporters",
+            "month":"months"
         }
     },
     "header":{

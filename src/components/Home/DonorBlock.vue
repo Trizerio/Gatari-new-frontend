@@ -9,7 +9,7 @@
                 <div class="server-druzhban-user" :key="druzhban.id">
                     <img :src="'https://a.gatari.pw/'+druzhban.id"  class="server-druzhban-avatar block-pad">
                     <a :href="'/u/'+druzhban.id" style="padding-left: 6px;">{{ druzhban.username }}</a>
-                    <div class="druzhban-month"> {{ druzhban.donor_expire | calcMonths}}</div>
+                    <div class="druzhban-month"> {{ druzhban.donor_expire | calcMonths($t('home.donors.month')) }}</div>
                 </div>
             </template>
         </div>
@@ -26,11 +26,11 @@
         }
     },
     filters: {
-        calcMonths: function(unix){
+        calcMonths: function(unix, month){
             var currentTime = (+ new Date()) / 1000;
             var seconds = Math.floor(unix - currentTime);
             var intervals = Math.floor(seconds / 2592000);
-            return intervals+" "+(intervals == 1 ? "month" : "months");
+            return intervals+" "+month;
         }
     },
     created: function(){
