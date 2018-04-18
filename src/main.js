@@ -1,6 +1,7 @@
 import Vue from 'vue'
-import App from './App.vue'
-import Home from './Home.vue'
+import App from '@/App.vue'
+import Home from '@/pages/Home.vue'
+import Beatmaps from '@/pages/Beatmaps.vue'
 import VueRouter from 'vue-router'
 import VueCookie from 'vue-cookie'
 import VueI18n from 'vue-i18n'
@@ -28,6 +29,11 @@ var router = new VueRouter({
       path: '/home',
       name: 'index',
       component: Home
+    },
+    {
+      path: '/beatmaps',
+      name: 'beatmaps',
+      component: Beatmaps
     }
   ]
 })

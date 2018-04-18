@@ -44,8 +44,8 @@
 </template>
 
 <script>
-import donorblock from './components/Home/DonorBlock.vue'
-import statsblock from './components/Home/StatsBlock.vue'
+import donorblock from '@/components/Home/DonorBlock.vue'
+import statsblock from '@/components/Home/StatsBlock.vue'
 export default {
     name: 'Home',
     components: {
