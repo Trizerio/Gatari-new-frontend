@@ -14,7 +14,7 @@
                     <router-link tag="a" to="beatmaps" class="nav-item nav-link" >{{ $t('header.beatmaps') }}</router-link>
                                 <input type="text" class="main-search" :placeholder="$t('header.search')" >
                        
-                                <a href="#" class="login">      <img src="images/icons/login.svg" class="icon-shadow login-header-icon"> 
+                                <a @click="loginForm = !loginForm" href="#" class="login">      <span class="icon-shadow login-header-icon"></span> 
                                     {{ $t('header.login') }}</a>
     
                         </div>
@@ -25,11 +25,23 @@
                 <!-- menu ended -->
                 </div>    
             </div>
+            <div class="container flex-dropdown">
+                <login v-if="loginForm"/>
+        </div>
         </div>
 </template>
 
 <script>
+    import login from '@/components/Login.vue'
     export default {
-        name: 'navbar'
+        name: 'navbar',
+        data(){
+            return{
+            loginForm: false
+            }
+        },
+        components:{
+            login
+        }
     }
 </script>

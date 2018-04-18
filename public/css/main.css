@@ -430,7 +430,7 @@ body {
     text-align: right;
     float: right;
     padding-top: 2px;
-    padding-right: 24px;
+    padding-right: 8px;
 
 }
 .login-registrate {
@@ -447,7 +447,10 @@ body {
     background-color: rgba(28,28,28,1);
     width: 320px;
     border-radius: 4px;
+    z-index: 1;
+    position: absolute;
 }
+
 .login-registrate-stroke1 {
     padding-top: 12px;
     font-size: 14px;
@@ -491,10 +494,31 @@ body {
 }
 .block-icon {
     float: right;
-    width: 26px;
+    width: 28px;
     margin-right: 64px;
-    padding-top: 26px;
+    padding-top: 28px;
+    background-size: 100%;
+    margin-top: 28px;
 }
+
 .login-header-icon {
-    width: 14px;
+    width: 15px;
+    background-image: url(/images/icons/login.svg);
+    background-size: 100%;
+    height: 14px;
+    background-position-y: 16px;
+    display: inline-block;
+}
+.stats-icon{
+    background-image: url(/images/icons/server-pie.svg);
+}
+
+.druzhban-icon {
+    background-image: url(/images/icons/druzhban-fist.svg);
+}
+
+.container.flex-dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }

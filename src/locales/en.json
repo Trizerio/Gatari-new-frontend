@@ -26,5 +26,15 @@
         "beatmaps": "Beatmaps",
         "leaderboard": "Leaderboard",
         "search":"Search"
+    },
+    "login":{
+        "title":"Login",
+        "login":"login",
+        "password":"password",
+        "forgot":"I forgot my password",
+        "sub":{
+            "title":"You dont have account yet?",
+            "sub":"Feel free to registrate on our server!"
+        }
     }
 }

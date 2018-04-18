@@ -2,7 +2,7 @@
     <div class="server-druzhban">
         <div class="server-druzhban-head">
             <div class="server-druzhban-text block-pad">{{ $t('home.donors.title') }}</div>
-            <img  src="images/icons/druzhban-fist.svg" class="block-icon icon-shadow" style="width: 30px !important;">
+            <div  class="icon-shadow block-icon druzhban-icon"></div>
         </div>
         <div class="server-druzhban-user-block">
             <template v-for="druzhban in druzhbans">
