@@ -4,33 +4,20 @@ import Home from './Home.vue'
 import VueRouter from 'vue-router'
 import VueCookie from 'vue-cookie'
 import VueI18n from 'vue-i18n'
-import enLocale from '@/locales/en'
-import ruLocale from '@/locales/ru'
+import {mixin, locales} from "@/locales/locale"
+
 Vue.use(VueI18n)
 Vue.use(VueRouter)
 Vue.use(VueCookie)
+Vue.mixin(mixin); 
 
-const i18n = new VueI18n({
+ const i18n = new VueI18n({
   locale: 'en', // set locale
   fallbackLocale: 'en',
-  messages: {
-    "en" : enLocale,
-    "ru" : ruLocale
-  }
+  messages: locales
 });
 
-window.languages = {
-  "en":{
-    "name": "English",
-    "flag": "us"
-  },
-  "ru":{
-    "name": "Русский",
-    "flag": "ru"
-  }
-};
-
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 var router = new VueRouter({
   routes: [
     {
