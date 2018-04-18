@@ -13,14 +13,12 @@
                     <router-link tag="a" to="leaderboard" class="nav-item nav-link" >{{ $t('header.leaderboard') }}</router-link>
                     <router-link tag="a" to="beatmaps" class="nav-item nav-link" >{{ $t('header.beatmaps') }}</router-link>
                                 <input type="text" class="main-search" :placeholder="$t('header.search')" >
-                            <div class="dropdown-login">
+                       
                                 <a href="#" class="login">      <img src="images/icons/login.png" 
                                 style="box-shadow: none !important; height: 16px; width: 16px;"> {{ $t('header.login') }}</a>
-                            </div>
+    
                         </div>
-                            <div class="dropdown-login-content"> 
-                                <div class="dropdown-login-stroke">Login</div>"            
-                            </div>
+                           
                     </div>
                 </nav>
             </div>
