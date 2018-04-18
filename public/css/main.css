@@ -270,7 +270,7 @@ body {
     .footer-logo>.subtitle{
     font-size: 16px;
 }
-.dropup {
+    .dropup {
     width: 160px;
     padding-right: 0;
 }
@@ -368,4 +368,16 @@ body {
  }
  .main-block-uppertext {
      height: 224px;
+ }
+ .dropdown-login {
+
+ }
+ .dropdown-login-content {
+     display: none;
+     z-index: 3;
+     background-color: rgba(18,18,18,1);
+     border-radius: 4px;
+ }
+ .dropdown-login:hover>.dropdown-login-content {
+     display: block;
  }
