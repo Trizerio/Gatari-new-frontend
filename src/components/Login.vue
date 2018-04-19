@@ -9,7 +9,7 @@
                     <input type="text" class="login-form login-form-password" :placeholder="$t('login.password')">
                     <div class="login-forgot"> {{ $t('login.forgot') }} </div>
                     <button class="login-btn">
-                            {{ $t('header.login') }}  <i class="fa fa-sign-in login-icon"></i>
+                            {{ $t('header.login') }}  <i class="fas fa-sign-in-alt login-icon"></i>
                     </button>
                 </div>
                     <div class="login-registrate">
