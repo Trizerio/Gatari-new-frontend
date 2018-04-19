@@ -30,18 +30,19 @@
                         <span class="beatmap songname title">Take This Life</span>
                         <span class="beatmap songname">In Flames</span>
 
+                            <div class="song-fav">
+                                    45546 <i class="fas fa-heart"></i>
+                            </div>
                         </a>
                         <div class="song-status">
                            RANKED
                         </div>
-                        <div class="song-fav d-flex justify-content-end">
-                                12043
-                        </div>
+              
                         
                         <div class="info">
                             <div class="play-download">
                                 
-                                <a class="btn-orange btn btn-circle  btn-sm" target="_blank" href="https://osu.gatari.pw/d/709296"><i class="fa fa-download"></i></a>
+                                <a class="download-icon" target="_blank" href="https://osu.gatari.pw/d/709296"><i class="fa fa-download"></i></a>
                             </div>
 
                             <div class="desc">

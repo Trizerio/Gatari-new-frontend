@@ -3,8 +3,8 @@ body {
 }
 .footer-bg {
     background: linear-gradient(
-        rgba(0, 0, 0, 0.8), 
-        rgba(0, 0, 0, 0.8)
+        rgba(0, 0, 0, 0.9), 
+        rgba(0, 0, 0, 0.9)
         ),
         url(/images/bm-bg.png);
 }
@@ -166,11 +166,7 @@ span.beatmap.songname.title {
     text-shadow: 0 3px 5px rgba(0, 0, 0, 0.17);
 }
 
-.play-download {
-    width: 25%;
-    float: right;
-    text-align: right;
-}
+
 .song-author-name {
     font-weight: 700;
     color:  rgb(195, 41, 86) !important;
@@ -192,10 +188,29 @@ span.beatmap.songname.title {
     text-align: center;
     padding-top: 2px;
 }
+.song-play {
+
+    color: white;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.17);
+    font-size: 14px;
+    float: right;
+    font-weight: 600;
+}
 .song-fav {
 
     color: white;
     text-shadow: 0 3px 5px rgba(0, 0, 0, 0.17);
-    font-size: 16px;
-    display: inline-flex !important;
+    font-size: 14px;
+    float: right;
+    font-weight: 600;
+}
+.download-icon {
+    color: rgba(0, 0, 0, 0.2);
+    float: right;
+    text-align: right;
+    transition: color 0.4s;
+    
+}
+.download-icon:hover {
+    color: rgba(0, 0, 0, 0.6);
 }
