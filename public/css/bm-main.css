@@ -47,10 +47,10 @@ body {
 
 
 .beatmapset-panel-prev {
-float: right;
     position: relative;
-    top: -5.1em;
-    left: -8px;
+    top: -172px;
+    float: left;
+    font-size: 36px;
 }
 
 .beatmapset-panel__play:hover {
@@ -81,26 +81,24 @@ float: right;
     padding-top: 0;
     margin: 0;
     overflow: hidden;
-    height: 210px;
+    height: 180px;
     text-align: left;
     background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.12);
+
 }
 
 .card {
     padding-top: 20px;
     margin: 22px 0 20px 0;
     background-color: rgba(214, 224, 226, 0.2);
-    border-top-width: 0;
-    border-bottom-width: 2px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
- box-shadow: 0 1px 3px rgba(0,0,0,.25) !important;
+    border: none !important;
+
 
 }
 
@@ -122,56 +120,82 @@ float: right;
 }
 
 .card.hovercard .info {
-    padding: 0px 8px 8px;
+    padding: 0px 12px 8px;
 }
 
 .card.hovercard .info .desc {
     overflow: hidden;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 20px;
-    color: #383838;
     text-overflow: ellipsis;
     text-shadow: none;
+    color: #2c2c2c;
 }
 
 .cardheader {
     display: block;
     background-position: 50% 50% !important;
-    box-shadow: 0 1px 9px rgba(0,0,0,.25);
     height: 10em;
     padding: 1em;
     position: relative;
-    border-bottom: 4px solid #ce2060;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
 }
 
 .cardheader.qual {
-    border-bottom: 4px solid #ffce1e !important;
+
 }
 .cardheader.ranked {
-    border-bottom: 4px solid #4a9e00 !important;
 }
 
 
 span.beatmap.songname {
-    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.79);
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.17);
     position: absolute;
     color: #fff;
     white-space: nowrap;
-    font-size: 1.1em;
+    font-size: 16px;
     font-weight: 700;
     bottom: .3em;
-    left: .3em;
+    left: 12px
 }
 span.beatmap.songname.title {
-    bottom: 1.3em;
+    bottom: 24px;
     font-size: 22px;
-    font-weight: 900;
-    left: .3em;
+    left: 12px;
+    font-weight: 700;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.17);
 }
 
 .play-download {
     width: 25%;
     float: right;
     text-align: right;
+}
+.song-author-name {
+    font-weight: 700;
+    color:  rgb(195, 41, 86) !important;
+}
+.card.hovercard .info .song-source {
+    font-size: 10px;
+    opacity: 0.5;  
+}
+.song-status {
+    width: 80px;
+    height: 24px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 12px;
+    position: absolute;
+    margin-left: 12px;
+    margin-top: 8px;
+    color: white;
+    text-align: center;
+    padding-top: 2px;
+}
+.song-fav {
+
+    color: white;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.17);
+    font-size: 16px;
+    display: inline-flex !important;
 }
