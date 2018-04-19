@@ -527,3 +527,42 @@ body {
     flex-direction: row;
     justify-content: flex-end;
 }
+.beatmap-banner {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.0)
+        ),
+        url(/images/bm-banner-bg.jpg);
+        height: 280px;
+        border-radius: 4px;
+        background-size: cover;
+        background-position-y: 50%;
+        box-shadow: -1px 2px 2px 1px rgba(0, 0, 0, 0.11);
+}
+.beatmap-banner-stroke {
+    padding-top: 30px;
+    color: white;
+    font-weight: 700;
+    font-size: 38px;
+    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.33);
+}
+.beatmap-banner-stroke2 {
+    color: white;
+    font-size: 16px;
+    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.33);
+}
+.beatmap-select-bg {
+    box-shadow: -1px 2px 2px 1px rgba(0, 0, 0, 0.11);
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    height: 660px;
+    margin-top: 8px;
+
+}
+.beatmap-block {
+    box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.17);
+    border-radius: 4px;
+    background-color: #ffffff;
+    height: 180px;
+    margin-top: 15px;
+}
