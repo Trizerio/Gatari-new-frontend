@@ -8,3 +8,170 @@ body {
         ),
         url(/images/bm-bg.png);
 }
+
+
+.col-sm-12:hover>.beatmapset-panel__shadow {
+    opacity: 1;
+        height: 83.7%;
+    width: 98.7%;
+}
+
+.col-sm-12:hover>.beatmapset-panel-prev {
+    opacity: 1 !important;
+}
+
+.col-sm-6:hover>.beatmapset-panel__shadow {
+    opacity: 1;
+}
+
+.col-sm-6:hover>.beatmapset-panel-prev {
+    opacity: 1 !important;
+}
+
+.beatmapset-panel__play {
+    color: #fff !important;
+    text-decoration: none;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.88);
+    -webkit-transition: all .12s ease-in-out;
+    transition: all .12s ease-in-out;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    font-size: 40px;
+     opacity: 0; 
+    line-height: 1;
+    cursor: pointer;
+}
+
+
+
+
+.beatmapset-panel-prev {
+float: right;
+    position: relative;
+    top: -5.1em;
+    left: -8px;
+}
+
+.beatmapset-panel__play:hover {
+    color: #fc2 !important;
+}
+
+.beatmapset-panel__shadow{
+    border-radius:5px;
+    -webkit-transform:translateZ(0);
+    transform:translateZ(0);
+    position:absolute;
+    top:0;
+    height: 83%;
+    width: 94.8%;
+    content:" ";
+    -webkit-box-shadow:0 10px 20px rgba(0,0,0,.25);
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+    -webkit-transition:all .12s ease-in-out;
+    transition:all .12s ease-in-out;
+    opacity:0;
+    pointer-events:none;
+    }
+
+
+    
+.card.hovercard {
+    position: relative;
+    padding-top: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 210px;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+}
+
+.card {
+    padding-top: 20px;
+    margin: 22px 0 20px 0;
+    background-color: rgba(214, 224, 226, 0.2);
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+ box-shadow: 0 1px 3px rgba(0,0,0,.25) !important;
+
+}
+
+.card.hovercard .info .title {
+    width: 75%;
+    margin-bottom: 4px;
+    font-size: 20px;
+    line-height: 1;
+    color: #404040;
+    vertical-align: middle;
+    display: inline;
+    text-shadow: none;
+}
+
+.card.hovercard .bottom {
+    padding: 0 10px;
+    margin-bottom: 17px;
+    white-space: normal;
+}
+
+.card.hovercard .info {
+    padding: 0px 8px 8px;
+}
+
+.card.hovercard .info .desc {
+    overflow: hidden;
+    font-size: 13px;
+    line-height: 20px;
+    color: #383838;
+    text-overflow: ellipsis;
+    text-shadow: none;
+}
+
+.cardheader {
+    display: block;
+    background-position: 50% 50% !important;
+    box-shadow: 0 1px 9px rgba(0,0,0,.25);
+    height: 10em;
+    padding: 1em;
+    position: relative;
+    border-bottom: 4px solid #ce2060;
+    margin-bottom: 10px;
+}
+
+.cardheader.qual {
+    border-bottom: 4px solid #ffce1e !important;
+}
+.cardheader.ranked {
+    border-bottom: 4px solid #4a9e00 !important;
+}
+
+
+span.beatmap.songname {
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.79);
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 1.1em;
+    font-weight: 700;
+    bottom: .3em;
+    left: .3em;
+}
+span.beatmap.songname.title {
+    bottom: 1.3em;
+    font-size: 22px;
+    font-weight: 900;
+    left: .3em;
+}
+
+.play-download {
+    width: 25%;
+    float: right;
+    text-align: right;
+}
