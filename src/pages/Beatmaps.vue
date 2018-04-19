@@ -9,8 +9,9 @@
                     <div class="beatmap-banner-stroke block-pad">Beatmaps</div>
                     <div class="beatmap-banner-stroke2 block-pad">Here you can find any map what you want! <br>
                         Feel free to download it from our server!
-
                     </div>
+                    <input type="text" class="block-pad beatmap-search">
+                    <button class="beatmap-search-btn">Search </button>
 
                 </div>
                 </div>
@@ -22,7 +23,7 @@
                     <div class="beatmap-select-bg">
                        <div class="col-lg-6">
                            <div class="beatmap-block">
-                               
+
                            </div>
                        </div> 
                     </div>
