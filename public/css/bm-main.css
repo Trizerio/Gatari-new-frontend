@@ -1,12 +1,12 @@
 body {
-    background-image: url(/images/bm-bg.png);
+    background-image: url(../images/bm-bg.png);
 }
 .footer-bg {
     background: linear-gradient(
         rgba(0, 0, 0, 0.9), 
         rgba(0, 0, 0, 0.9)
         ),
-        url(/images/bm-bg.png);
+        url(../images/bm-bg.png);
 }
 
 

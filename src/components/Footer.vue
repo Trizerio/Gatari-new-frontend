@@ -41,14 +41,14 @@
                                     <div class="language">   
 
                                      {{ $t('misc.language') }} 
-                                     <img :src="'/images/flags/'+toUpper(window().language.flag)+'.png'" class="dropup-flags">
+                                     <img :src="'images/flags/'+toUpper(window().language.flag)+'.png'" class="dropup-flags">
 
                                     </div>
                                          <div class="dropup-content">
                                              <ul>
                                                 <li v-for="(lang, locale) in window().languages" :key="locale" @click="setLocale(locale)" class="language-select">
                                                     {{ lang.name }}
-                                                    <img :src="'/images/flags/'+toUpper(lang.flag)+'.png'" class="dropup-flags">
+                                                    <img :src="'images/flags/'+toUpper(lang.flag)+'.png'" class="dropup-flags">
                                                  </li>
                                             </ul>
                                          </div>

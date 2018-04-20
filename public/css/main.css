@@ -17,7 +17,7 @@ body {
       rgba(255, 255, 255, 0.1), 
       rgba(255, 255, 255, 0.1)
     ),
-    url(/images/bg2.png);
+    url(../images/bg2.png);
 }
 .block-pad {
     margin-left: 64px;
@@ -64,7 +64,7 @@ body {
 }
 
 .main-block {
-    background-image: url(/images/main-bg3.png);
+    background-image: url(../images/main-bg3.png);
     background-position-x: left;
     height: 400px;
     background-size: cover;
@@ -89,7 +89,7 @@ body {
 }
 .main-block-registration {
     margin-top: 70px;
-    background-image: url(/images/icons/button.svg);
+    background-image: url(../images/icons/button.svg);
     background-color: #a41042;
     margin-left: 64px;
     width: 170px;
@@ -120,7 +120,7 @@ body {
 }
 
 .info-block {
-    background-image: url(/images/info-block2.png);
+    background-image: url(../images/info-block2.png);
     background-position-x: right;
     height: 220px;
     background-size: cover;
@@ -139,7 +139,7 @@ body {
     padding-top: 28px;
 }
 .server-status {
-    background-image: url(/images/server-stats-bg.png);
+    background-image: url(../images/server-stats-bg.png);
     height: 240px;
     background-size: cover;
     color: white;
@@ -166,7 +166,7 @@ body {
 }
 
 .server-druzhban {
-    background-image: url(/images/server-druzhban-bg.png);
+    background-image: url(../images/server-druzhban-bg.png);
     height: 240px;
     background-size: cover;
     color: white;
@@ -193,7 +193,7 @@ body {
     float: left;      
     height: 30px;
     border-radius: 6px;
-    background-image: url(/images/icons/button.svg);
+    background-image: url(../images/icons/button.svg);
 }
 .server-druzhban-head {
     height: 60px;
@@ -213,7 +213,7 @@ body {
       rgba(255, 255, 255, 0.03), 
       rgba(255, 255, 255, 0.03)
     ),
-    url(/images/bg2.png);
+    url(../images/bg2.png);
     height: 180px;
     width: 100%;
     margin-top: 8px;
@@ -255,7 +255,7 @@ body {
     padding-left: 24px;
 }
 .header-bg {
-    background-image: url(/images/icons/button.svg);
+    background-image: url(../images/icons/button.svg);
     background-color: #a9194c;
     box-shadow: -1px 2px 2px 1px rgba(0, 0, 0, 0.11);
     margin-bottom: 8px;
@@ -403,7 +403,7 @@ body {
     width: 120px;
     height: 32px;
     margin-top: 12px;
-    background-image: url(/images/icons/button.svg);
+    background-image: url(../images/icons/button.svg);
     background-color: #27b;
     border: none;
     background-size: 150%;
@@ -469,7 +469,7 @@ body {
     width: 140px;
     height: 32px;
     margin-top: 12px;
-    background-image: url(/images/icons/button.svg);
+    background-image: url(../images/icons/button.svg);
     background-color: #b32152;
     border: none;
     background-size: 150%;
@@ -509,18 +509,18 @@ body {
 
 .login-header-icon {
     width: 15px;
-    background-image: url(/images/icons/login.svg);
+    background-image: url(../images/icons/login.svg);
     background-size: 100%;
     height: 14px;
     background-position-y: 16px;
     display: inline-block;
 }
 .stats-icon{
-    background-image: url(/images/icons/server-pie.svg);
+    background-image: url(../images/icons/server-pie.svg);
 }
 
 .druzhban-icon {
-    background-image: url(/images/icons/druzhban-fist.svg);
+    background-image: url(../images/icons/druzhban-fist.svg);
 }
 
 .container.flex-dropdown {
@@ -533,7 +533,7 @@ body {
         rgba(0, 0, 0, 0.6), 
         rgba(0, 0, 0, 0.0)
         ),
-        url(/images/bm-banner-bg.jpg);
+        url(../images/bm-banner-bg.jpg);
         height: 280px;
         border-radius: 4px;
         background-size: cover;
@@ -603,7 +603,7 @@ body {
     margin-bottom: 2px;
     padding-left: 6px;
     box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.17);
-    background-image: url(/images/icons/button.svg);
+    background-image: url(../images/icons/button.svg);
     margin-left: 8px;
     transition:  box-shadow 0.6s;
 }

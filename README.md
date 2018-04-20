@@ -8,8 +8,11 @@ $ npm install
 ```
 And finally start server
 ```
-$ npm run serve
+$ npm run dev
 ```
+
+And the site will be here: http://localhost:8080/public/
+
 
 And that's it.
 

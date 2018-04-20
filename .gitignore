@@ -19,3 +19,5 @@ yarn-error.log*
 *.njsproj
 *.sln
 package-lock.json
+public/build.js
+public/build.js.map
