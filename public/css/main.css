@@ -708,3 +708,33 @@ button.login-btn.disabled {
     filter: grayscale(1);
     cursor: not-allowed;
 }
+
+.header-avatar{
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 8px;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-box-shadow: inset 0 0 0 0px #fff;
+    box-shadow: inset 0 0 0 0px #fff;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    background-color: #333;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    display: block;
+    filter: drop-shadow( -1px 2px 2px rgba(0, 0, 0, 0.22) );
+    transition: 0.2s box-shadow;
+}
+
+.header-avatar:hover{
+    box-shadow: inset 0 0 0 1.6px #fff;
+}

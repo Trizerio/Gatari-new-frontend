@@ -19,6 +19,12 @@ export default {
   created(){
     var lang = this.$cookie.get('lang');
     this.setLocale(lang);
+    if(!this.$session.exists()){
+      console.log("we don't have any sessions, start new");
+      this.$session.start();
+    }else{
+      console.log('we have a some session, wow!');
+    }
   }
 }
 </script>

@@ -70,6 +70,7 @@
                     vm.onLogin({
                         user: vm.user
                     });
+                    vm.$parent.loginForm = false;
                 })
                 .catch(function(e){
                     console.log(e);

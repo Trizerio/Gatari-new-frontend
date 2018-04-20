@@ -7,13 +7,14 @@ import VueCookie from 'vue-cookie'
 import VueI18n from 'vue-i18n'
 import axios from 'axios'
 import {mixin, locales} from "@/locales/locale"
+import VueSession from 'vue-session'
 
 Vue.prototype.$axios = axios;
 Vue.use(VueI18n);
 Vue.use(VueRouter);
 Vue.use(VueCookie);
 Vue.mixin(mixin); 
-
+Vue.use(VueSession,{persist: true});
  const i18n = new VueI18n({
   locale: 'en', // set locale
   fallbackLocale: 'en',
