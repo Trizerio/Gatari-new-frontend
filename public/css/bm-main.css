@@ -187,9 +187,15 @@ span.beatmap.songname.title {
     color: white;
     text-align: center;
     padding-top: 2px;
+    transition: opacity 0.2s;
+}
+.card.hovercard:hover>.song-status {
+     opacity: 0;
+    }
+.beatmapset-panel__play:hover>.song-status {
+    opacity: 0;
 }
 .song-play {
-
     color: white;
     text-shadow: 0 3px 5px rgba(0, 0, 0, 0.17);
     font-size: 14px;
