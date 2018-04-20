@@ -26,7 +26,7 @@
                 </div>    
             </div>
             <div class="container flex-dropdown">
-                <login v-if="loginForm"/>
+                <login :onLogin="onLogin" v-if="loginForm"/>
         </div>
         </div>
 </template>
@@ -42,6 +42,11 @@
         },
         components:{
             login
+        },
+        methods:{
+            onLogin: function(data){
+                console.log(data);
+            }
         }
     }
 </script>

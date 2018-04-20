@@ -5,11 +5,13 @@ import Beatmaps from '@/pages/Beatmaps.vue'
 import VueRouter from 'vue-router'
 import VueCookie from 'vue-cookie'
 import VueI18n from 'vue-i18n'
+import axios from 'axios'
 import {mixin, locales} from "@/locales/locale"
 
-Vue.use(VueI18n)
-Vue.use(VueRouter)
-Vue.use(VueCookie)
+Vue.prototype.$axios = axios;
+Vue.use(VueI18n);
+Vue.use(VueRouter);
+Vue.use(VueCookie);
 Vue.mixin(mixin); 
 
  const i18n = new VueI18n({

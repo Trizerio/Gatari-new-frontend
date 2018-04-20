@@ -46,7 +46,7 @@
                                     </div>
                                          <div class="dropup-content">
                                              <ul>
-                                                <li v-for="(lang, locale) in window().languages" :key="locale" @click="setLocale(locale)" class="language-select">
+                                                <li v-for="(lang, locale) in window().languages" :key="locale" @click="setLocale(locale)" :class="'language-select'+ (window().language.flag == lang.flag ? ' selected' : '')">
                                                     {{ lang.name }}
                                                     <img :src="'images/flags/'+toUpper(lang.flag)+'.png'" class="dropup-flags">
                                                  </li>

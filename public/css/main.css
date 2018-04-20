@@ -352,6 +352,26 @@ body {
     padding: 4px;
     cursor: pointer;
 }
+
+li.language-select:hover, li.language-select.selected {
+    background-color: #060606;
+    box-shadow: -1px 2px 10px 1px rgba(0, 0, 0, 0.46);
+}
+
+
+li.language-select:hover:before, li.language-select.selected:before{
+    content: "";
+    border-radius: 10px;
+    position: relative;
+    top: 3px;
+    display: block;
+    float: left;
+    left: 8px;
+    height: 18px;
+    width: 2px;
+    background-color: #fc2;
+}
+
 .header-menu {
     float: right !important;
     margin-right: 24px;
@@ -411,7 +431,7 @@ body {
     color: white;
     text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.11);
     font-size: 14px;
-    transition: 0.3s box-shadow, 0.2s , 0.4s background-position-x;
+    transition: 0.3s box-shadow, 0.2s , 0.4s background-position-x, 0.5s filter, 0.4s background-color;
     cursor: pointer;
     text-align: left;
     padding-left: 12px;
@@ -422,8 +442,9 @@ body {
 .login-btn:focus {
     outline:0;
 }
-.login-btn:hover {
+.login-btn:hover:not(.disabled) {
     background-position-x: -30px;
+    background-color: #55a2de;
 }
 
 .login-btn:active{
@@ -442,11 +463,14 @@ body {
     background-color: rgba(36,36,36,1);
     padding-left: 0px !important;
     padding-right: 0px !important;
-    margin-top: 8px;
+    margin-top: 14px;
+    position: absolute;
     color: white;
+    width: 320px;
     text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.33);
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
+    z-index: 1;
 }
 .dropdown-login-bg {
     background-color: rgba(28,28,28,1);
@@ -455,6 +479,7 @@ body {
     z-index: 1;
     position: absolute;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    padding-bottom: 16px;
 }
 
 .login-registrate-stroke1 {
@@ -615,4 +640,71 @@ body {
 }
 .beatmap-search-btn:hover {
     box-shadow: 0px 10px 34px 3px rgba(0,0,0,0.5);
+}
+
+.diffIcon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    margin-bottom: -1px !important;
+}
+
+.diffIcon.easy { background: url('../images/diffs/easy.png'); }
+.diffIcon.normal { background: url('../images/diffs/normal.png'); }
+.diffIcon.hard { background: url('../images/diffs/hard.png'); }
+.diffIcon.insane { background: url('../images/diffs/insane.png'); }
+.diffIcon.expert { background: url('../images/diffs/expert.png'); }
+
+.diffIcon.easy-t { background: url('../images/diffs/easy-t.png'); }
+.diffIcon.normal-t { background: url('../images/diffs/normal-t.png'); }
+.diffIcon.hard-t { background: url('../images/diffs/hard-t.png'); }
+.diffIcon.insane-t { background: url('../images/diffs/insane-t.png'); }
+.diffIcon.expert-t { background: url('../images/diffs/expert-t.png'); }
+
+.diffIcon.easy-f { background: url('../images/diffs/easy-f.png'); }
+.diffIcon.normal-f { background: url('../images/diffs/normal-f.png'); }
+.diffIcon.hard-f { background: url('../images/diffs/hard-f.png'); }
+.diffIcon.insane-f { background: url('../images/diffs/insane-f.png'); }
+.diffIcon.expert-f { background: url('../images/diffs/expert-f.png'); }
+
+.diffIcon.easy-m { background: url('../images/diffs/easy-m.png'); }
+.diffIcon.normal-m { background: url('../images/diffs/normal-m.png'); }
+.diffIcon.hard-m { background: url('../images/diffs/hard-m.png'); }
+.diffIcon.insane-m { background: url('../images/diffs/insane-m.png'); }
+.diffIcon.expert-m { background: url('../images/diffs/expert-m.png'); }
+
+.dropdown-login-bg.error>.dropdown-login-content { -webkit-filter: grayscale(1) blur(2px); filter: grayscale(1) blur(2px); }
+
+
+.login-error {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,.6);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0.2em;
+    width: 100%;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    overflow: hidden;
+    background-color: #790000;
+    background-image: url(../images/icons/button.svg);
+    background-size: cover;
+    color: #fff;
+    /* font-weight: 600; */
+    font-size: 1em;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.75);
+    z-index: 3;
+}
+
+button.login-btn.disabled {
+    filter: grayscale(1);
+    cursor: not-allowed;
 }

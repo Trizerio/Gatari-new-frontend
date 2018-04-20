@@ -10,7 +10,6 @@
 </template>
 
 <script>
-    import axios from 'axios'
     export default {
         props: ['onReady'],
         name: 'statsblock',
@@ -37,7 +36,7 @@
                 
             },
             getStats: function(type, callback){
-                axios.get("https://api.gatari.pw/stats/"+type)
+                this.$axios.get("https://api.gatari.pw/stats/"+type)
                 .then((response) => callback(response.data.result));
             },
             sendStats: function(){
