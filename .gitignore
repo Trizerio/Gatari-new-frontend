@@ -21,3 +21,4 @@ yarn-error.log*
 package-lock.json
 public/build.js
 public/build.js.map
+*.psd
