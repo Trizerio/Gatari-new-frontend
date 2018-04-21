@@ -23,25 +23,25 @@
                         <table class="leaderboard-table">
                             <thead class="leadeboard-column-padding">
                                 <tr>
-                                    <th class=""> </th>
-                                    <th class=""></th>
-                                    <th class=""> Accuracy </th>
-                                    <th class=""> PP </th>
-                                    <th class=""> Playcount </th>
-                                    <th class=""> Level </th>
+                                    <th class="ranking-page-table__heading"> </th>
+                                    <th class="ranking-page-table__heading ranking-page-table__heading--main"></th>
+                                    <th class="ranking-page-table__heading"> Accuracy </th>
+                                    <th class="ranking-page-table__heading"> PP </th>
+                                    <th class="ranking-page-table__heading"> Playcount </th>
+                                    <th class="ranking-page-table__heading"> Level </th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="leaderboard-column">
-                                    <td class="leaderboard-column-player-rank">#1 </td>
-                                    <td class="leaderboard-column-player-name">
-                                         <img src="images/flags/ru.png" class="leaderboard-player-flag"> 
-                                         halfy
+                                <tr v-for="(user, index) in leaderboard" class="leaderboard-column">
+                                    <td class="ranking-page-table__column leaderboard-column-player-rank">#{{ index+1 }} </td>
+                                    <td class="ranking-page-table__column leaderboard-column-player-name">
+                                         <img :src="'images/flags/'+user.country+'.png'" class="leaderboard-player-flag"> 
+                                         {{ user.username }}
                                     </td>
-                                    <td class="leaderboard-column-player-opacity">125 </td>
-                                    <td class="">32425 </td>
-                                    <td class="leaderboard-column-player-opacity">3254 </td>
-                                    <td class="leaderboard-column-player-opacity">13 </td>
+                                    <td class="ranking-page-table__column ranking-page-table__column--dimmed">{{ user.accuracy.toFixed(2) }}% </td>
+                                    <td class="ranking-page-table__column">{{ user.pp }} </td>
+                                    <td class="ranking-page-table__column ranking-page-table__column--dimmed">{{ user.playcount }} </td>
+                                    <td class="ranking-page-table__column ranking-page-table__column--dimmed">{{ user.level }} </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -55,5 +55,17 @@
 <script>  
     export default {
     name: 'Leaderboard',
+    data(){
+        return {
+            leaderboard:{}
+        }
+    },
+    created(){
+        var vm = this;
+        this.$axios.get("http://api.gatari.pw/leaderboard")
+        .then(function(response){
+            vm.leaderboard = response.data.leaderboard;
+        });
+    }
     }
 </script>
