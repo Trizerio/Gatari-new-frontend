@@ -24,6 +24,7 @@ Vue.use(VueSession,{persist: true});
 
 Vue.config.productionTip = false;
 var router = new VueRouter({
+  mode: 'history',
   routes: [
     {
       redirect: '/home',
@@ -31,12 +32,10 @@ var router = new VueRouter({
     },
     {
       path: '/home',
-      name: 'index',
       component: Home
     },
     {
       path: '/beatmaps',
-      name: 'beatmaps',
       component: Beatmaps
     },
     {
