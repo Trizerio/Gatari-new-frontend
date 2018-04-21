@@ -1,5 +1,5 @@
 body {
-    background-image: url(../images/bm-bg.png);
+    background-image: url(/images/bm-bg.png);
 }
 
 
@@ -8,7 +8,7 @@ body {
         rgba(0, 0, 0, 0.6), 
         rgba(0, 0, 0, 0.0)
         ),
-        url(../images/banners/leaderboard-bg.jpg);
+        url(/images/banners/leaderboard-bg.jpg);
         height: 280px;
         border-radius: 4px;
         background-size: cover;

@@ -17,7 +17,7 @@ body {
       rgba(255, 255, 255, 0.1), 
       rgba(255, 255, 255, 0.1)
     ),
-    url(../images/bg2.png);
+    url(/images/bg2.png);
 }
 .block-pad {
     margin-left: 64px;
@@ -63,149 +63,6 @@ body {
     color: white;
 }
 
-.main-block {
-    background-image: url(../images/main-bg3.png);
-    background-position-x: left;
-    height: 400px;
-    background-size: cover;
-    color: white;
-    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.33);
-    box-shadow: -1px 2px 2px 1px rgba(0, 0, 0, 0.11);
-    border-radius: 4px;
-}
-.main-block-gatari {
-    float: left;
-    padding-top: 54px;
-    font-size: 34px;
-}
-.main-block-gatari2 {
-    padding-top: 110px;
-    font-size: 18px;    
-}
-.main-block-gatari3 {
-    padding-top: 12px;
-    font-size: 14px;
-    font-style: italic;
-}
-.main-block-registration {
-    margin-top: 70px;
-    background-image: url(../images/icons/button.svg);
-    background-color: #a41042;
-    margin-left: 64px;
-    width: 170px;
-    height: 60px;
-    border: none;
-    background-size: 150%;
-    border-radius: 4px;
-    color: white;
-    font-style: italic;
-    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.11);
-    font-size: 16px;
-    transition: 0.22s box-shadow, 0.2s background-color, 0.4s background-position-x, 0.22s margin-top;
-    cursor: pointer;
-    box-shadow: 0 5px #5d1029, 0 4px 3px rgb(0, 0, 0);
-}
-
-.main-block-registration:focus {
-    outline:0;
-}
-.main-block-registration:hover {
-    background-color: #f93275;
-    background-position-x: -30px;
-}
-
-.main-block-registration:active{
-    box-shadow: none;
-    margin-top: 73px;
-}
-
-.info-block {
-    background-image: url(../images/info-block2.png);
-    background-position-x: right;
-    height: 220px;
-    background-size: cover;
-    color: white;
-    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.33);
-    box-shadow: -1px 2px 2px 1px rgba(0, 0, 0, 0.11);
-    margin-top: 8px;
-    border-radius: 4px;
-}
-.info-text {
-    font-size: 38px;
-    padding-top: 16px;
-}
-.info-text2 {
-    font-size: 14px;
-    padding-top: 28px;
-}
-.server-status {
-    background-image: url(../images/server-stats-bg.png);
-    height: 240px;
-    background-size: cover;
-    color: white;
-    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.33);
-    box-shadow: -1px 2px 2px 1px rgba(0, 0, 0, 0.11);
-    margin-top: 8px;
-    border-radius: 4px;
-}
-.server-status-text {
-    padding-top: 24px;
-    font-size: 24px;
-    float: left;
-}
-.server-status-online {
-    padding-top: 70px;
-    font-size: 14px;
-    float: left;
-}
-
-@media (min-width: 576px){
-    .server-status-online {
-        width: 450px;
-    }
-}
-
-.server-druzhban {
-    background-image: url(../images/server-druzhban-bg.png);
-    height: 240px;
-    background-size: cover;
-    color: white;
-    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.33);
-    box-shadow: -1px 2px 2px 1px rgba(0, 0, 0, 0.11);
-    margin-top: 8px;
-    border-radius: 4px;
-}
-.server-druzhban-text {
-    padding-top: 24px;
-    font-size: 24px;
-    display: inline-block;
-}
-.server-druzhban-user {
-    padding-top: 8px;
-}
-
-.server-druzhban-user a{
-    color: white !important;
-    text-decoration: none !important;
-}
-
-.server-druzhban-avatar {
-    float: left;      
-    height: 30px;
-    border-radius: 6px;
-    background-image: url(../images/icons/button.svg);
-}
-.server-druzhban-head {
-    height: 60px;
-}
-.druzhban-month {
-    float: right;
-    opacity: 0.6;
-    padding-right: 64px;
-}
-.server-druzhban-user-block {
-    padding-top: 6px;
-}
 .footer-bg {
     text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.33);
     background: 
@@ -213,7 +70,7 @@ body {
       rgba(255, 255, 255, 0.03), 
       rgba(255, 255, 255, 0.03)
     ),
-    url(../images/bg2.png);
+    url(/images/bg2.png);
     height: 180px;
     margin-top: 15px !important;
     padding: 10px 0px 0px 0px;
@@ -255,7 +112,7 @@ body {
     font-weight: 600; 
 }
 .header-bg {
-    background-image: url(../images/icons/button.svg);
+    background-image: url(/images/icons/button.svg);
     background-color: #a9194c;
     box-shadow: -1px 2px 2px 1px rgba(0, 0, 0, 0.11);
     margin-bottom: 8px;
@@ -418,7 +275,7 @@ li.language-select:hover:before, li.language-select.selected:before{
     width: 120px;
     height: 32px;
     margin-top: 12px;
-    background-image: url(../images/icons/button.svg);
+    background-image: url(/images/icons/button.svg);
     background-color: #27b;
     border: none;
     background-size: 150%;
@@ -489,7 +346,7 @@ li.language-select:hover:before, li.language-select.selected:before{
     width: 140px;
     height: 32px;
     margin-top: 12px;
-    background-image: url(../images/icons/button.svg);
+    background-image: url(/images/icons/button.svg);
     background-color: #b32152;
     border: none;
     background-size: 150%;
@@ -529,18 +386,18 @@ li.language-select:hover:before, li.language-select.selected:before{
 
 .login-header-icon {
     width: 15px;
-    background-image: url(../images/icons/login.svg);
+    background-image: url(/images/icons/login.svg);
     background-size: 100%;
     height: 14px;
     background-position-y: 16px;
     display: inline-block;
 }
 .stats-icon{
-    background-image: url(../images/icons/server-pie.svg);
+    background-image: url(/images/icons/server-pie.svg);
 }
 
 .druzhban-icon {
-    background-image: url(../images/icons/druzhban-fist.svg);
+    background-image: url(/images/icons/druzhban-fist.svg);
 }
 
 .container.flex-dropdown {
@@ -548,94 +405,7 @@ li.language-select:hover:before, li.language-select.selected:before{
     flex-direction: row;
     justify-content: flex-end;
 }
-.beatmap-banner {
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.6), 
-        rgba(0, 0, 0, 0.0)
-        ),
-        url(../images/bm-banner-bg.jpg);
-        height: 280px;
-        border-radius: 4px;
-        background-size: cover;
-        background-position-y: 50%;
-        box-shadow: -1px 2px 2px 1px rgba(0, 0, 0, 0.11);
-}
-.beatmap-banner-stroke {
-    padding-top: 30px;
-    color: white;
-    font-weight: 700;
-    font-size: 38px;
-    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.33);
-}
-.beatmap-banner-stroke2 {
-    color: white;
-    font-size: 16px;
-    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.33);
-}
-.beatmap-select-bg {
-    box-shadow: -1px 2px 2px 1px rgba(0, 0, 0, 0.11);
-    border-radius: 4px;
-    background-color: #ffffff;
-    height: 660px;
-    margin-top: 8px;
-    padding-top: 15px;
 
-}
-.beatmap-block {
-    box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.17);
-    border-radius: 4px;
-    background-color: #ffffff;
-    height: 180px;
-    margin-top: 15px;
-}
-
-.dropup-content>ul{
-    margin-bottom: 4px;
-}
-.beatmap-search {
-    height: 28px;
-    box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.17);
-    outline: none;
-    border: none;
-    padding: 12px;
-    opacity: 1;
-    margin-top: 46px;
-    border-radius: 30px;
-    height: 34px;
-    color: rgba(0, 0, 0, 0.6);
-    width: 300px;
-}
-.beatmap-search-btn {
-    width: 120px;  
-    height: 36px;
-    margin-top: 6px;
-    background-color: #a9194c;
-    border: none;
-    background-size: 150%;
-    border-radius: 30px;
-    color: white;
-    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.11);
-    font-size: 14px;
-    cursor: pointer;
-    text-align: center;
-    padding-left: 12px;
-    font-weight: 500;
-    margin-bottom: 2px;
-    padding-left: 6px;
-    box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.17);
-    background-image: url(../images/icons/button.svg);
-    margin-left: 8px;
-    transition:  box-shadow 0.6s;
-}
-.beatmap-search-btn:focus {
-    outline: none;
-}
-.beatmap-search-btn:active {
-    outline: none;
-}
-.beatmap-search-btn:hover {
-    box-shadow: 0px 10px 34px 3px rgba(0,0,0,0.5);
-}
 
 .diffIcon {
     display: inline-block;
@@ -645,29 +415,29 @@ li.language-select:hover:before, li.language-select.selected:before{
     margin-bottom: -1px !important;
 }
 
-.diffIcon.easy { background: url('../images/diffs/easy.png'); }
-.diffIcon.normal { background: url('../images/diffs/normal.png'); }
-.diffIcon.hard { background: url('../images/diffs/hard.png'); }
-.diffIcon.insane { background: url('../images/diffs/insane.png'); }
-.diffIcon.expert { background: url('../images/diffs/expert.png'); }
+.diffIcon.easy { background: url('/images/diffs/easy.png'); }
+.diffIcon.normal { background: url('/images/diffs/normal.png'); }
+.diffIcon.hard { background: url('/images/diffs/hard.png'); }
+.diffIcon.insane { background: url('/images/diffs/insane.png'); }
+.diffIcon.expert { background: url('/images/diffs/expert.png'); }
 
-.diffIcon.easy-t { background: url('../images/diffs/easy-t.png'); }
-.diffIcon.normal-t { background: url('../images/diffs/normal-t.png'); }
-.diffIcon.hard-t { background: url('../images/diffs/hard-t.png'); }
-.diffIcon.insane-t { background: url('../images/diffs/insane-t.png'); }
-.diffIcon.expert-t { background: url('../images/diffs/expert-t.png'); }
+.diffIcon.easy-t { background: url('/images/diffs/easy-t.png'); }
+.diffIcon.normal-t { background: url('/images/diffs/normal-t.png'); }
+.diffIcon.hard-t { background: url('/images/diffs/hard-t.png'); }
+.diffIcon.insane-t { background: url('/images/diffs/insane-t.png'); }
+.diffIcon.expert-t { background: url('/images/diffs/expert-t.png'); }
 
-.diffIcon.easy-f { background: url('../images/diffs/easy-f.png'); }
-.diffIcon.normal-f { background: url('../images/diffs/normal-f.png'); }
-.diffIcon.hard-f { background: url('../images/diffs/hard-f.png'); }
-.diffIcon.insane-f { background: url('../images/diffs/insane-f.png'); }
-.diffIcon.expert-f { background: url('../images/diffs/expert-f.png'); }
+.diffIcon.easy-f { background: url('/images/diffs/easy-f.png'); }
+.diffIcon.normal-f { background: url('/images/diffs/normal-f.png'); }
+.diffIcon.hard-f { background: url('/images/diffs/hard-f.png'); }
+.diffIcon.insane-f { background: url('/images/diffs/insane-f.png'); }
+.diffIcon.expert-f { background: url('/images/diffs/expert-f.png'); }
 
-.diffIcon.easy-m { background: url('../images/diffs/easy-m.png'); }
-.diffIcon.normal-m { background: url('../images/diffs/normal-m.png'); }
-.diffIcon.hard-m { background: url('../images/diffs/hard-m.png'); }
-.diffIcon.insane-m { background: url('../images/diffs/insane-m.png'); }
-.diffIcon.expert-m { background: url('../images/diffs/expert-m.png'); }
+.diffIcon.easy-m { background: url('/images/diffs/easy-m.png'); }
+.diffIcon.normal-m { background: url('/images/diffs/normal-m.png'); }
+.diffIcon.hard-m { background: url('/images/diffs/hard-m.png'); }
+.diffIcon.insane-m { background: url('/images/diffs/insane-m.png'); }
+.diffIcon.expert-m { background: url('/images/diffs/expert-m.png'); }
 
 .dropdown-login-bg.error>.dropdown-login-content { -webkit-filter: grayscale(1) blur(2px); filter: grayscale(1) blur(2px); }
 
@@ -689,7 +459,7 @@ li.language-select:hover:before, li.language-select.selected:before{
     transition: all .2s ease-out;
     overflow: hidden;
     background-color: #790000;
-    background-image: url(../images/icons/button.svg);
+    background-image: url(/images/icons/button.svg);
     background-size: cover;
     color: #fff;
     /* font-weight: 600; */

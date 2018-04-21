@@ -1,5 +1,6 @@
 <template>
 <div id="home">
+        <link rel="stylesheet" href="css/pages/home.css">
     <div class="container">
         <div class="row"> 
             <div class="col"> 

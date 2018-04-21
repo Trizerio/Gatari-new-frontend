@@ -1,6 +1,6 @@
 <template>
     <div id="leaderboard">
-        <link rel="stylesheet" href="css/leaderboard.css">
+        <link rel="stylesheet" href="css/pages/leaderboard.css">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -35,7 +35,7 @@
                                 <tr v-for="(user, index) in leaderboard" class="leaderboard-column">
                                     <td class="ranking-page-table__column leaderboard-column-player-rank">#{{ index+1 }} </td>
                                     <td class="ranking-page-table__column leaderboard-column-player-name">
-                                         <img :src="'images/flags/'+user.country+'.png'" class="leaderboard-player-flag"><a target="_blank" :href="'https://osu.gatari.pw/u/'+user.user">{{ user.username }}</a>
+                                         <img :src="'images/flags/'+user.country+'.png'" class="leaderboard-player-flag"><a target="_blank" :href="'https://osu.gatari.pw/u/'+user.user">[{{ user.clan.abbr }}] {{ user.username }}</a>
                                     </td>
                                     <td class="ranking-page-table__column ranking-page-table__column--dimmed">{{ user.accuracy.toFixed(2) }}% </td>
                                     <td class="ranking-page-table__column">{{ user.pp }} </td>
