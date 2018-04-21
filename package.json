@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "http-server",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --hot",
+    "serve": "history-server public",
+    "dev": "history-server public | cross-env NODE_ENV=development webpack --watch" ,
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
@@ -14,7 +14,6 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-stage-3": "^6.24.1",
     "cross-env": "^5.1.4",
-    "http-server": "^0.11.1",
     "vue": "^2.5.16",
     "vue-cookie": "^1.1.4",
     "vue-i18n": "^7.6.0",

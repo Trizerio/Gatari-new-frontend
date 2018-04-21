@@ -32,17 +32,20 @@ var router = new VueRouter({
     },
     {
       path: '/home',
+      name: 'index',
       component: Home
     },
     {
       path: '/beatmaps',
+      name: 'beatmaps',
       component: Beatmaps
     },
     {
       path: '/leaderboard',
       name: 'leaderboard',
       component: Leaderboard
-    }
+    },
+    { path: '*', redirect: '/home' }
   ]
 })
 
