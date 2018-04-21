@@ -26,7 +26,7 @@
                                     <th class="ranking-page-table__heading"> </th>
                                     <th class="ranking-page-table__heading ranking-page-table__heading--main"></th>
                                     <th class="ranking-page-table__heading"> Accuracy </th>
-                                    <th class="ranking-page-table__heading"> PP </th>
+                                    <th class="ranking-page-table__heading table__heading--selected"> PP </th>
                                     <th class="ranking-page-table__heading"> Playcount </th>
                                     <th class="ranking-page-table__heading"> Level </th>
                                 </tr>
@@ -35,8 +35,7 @@
                                 <tr v-for="(user, index) in leaderboard" class="leaderboard-column">
                                     <td class="ranking-page-table__column leaderboard-column-player-rank">#{{ index+1 }} </td>
                                     <td class="ranking-page-table__column leaderboard-column-player-name">
-                                         <img :src="'images/flags/'+user.country+'.png'" class="leaderboard-player-flag"> 
-                                         {{ user.username }}
+                                         <img :src="'images/flags/'+user.country+'.png'" class="leaderboard-player-flag"><a target="_blank" :href="'https://osu.gatari.pw/u/'+user.user">{{ user.username }}</a>
                                     </td>
                                     <td class="ranking-page-table__column ranking-page-table__column--dimmed">{{ user.accuracy.toFixed(2) }}% </td>
                                     <td class="ranking-page-table__column">{{ user.pp }} </td>

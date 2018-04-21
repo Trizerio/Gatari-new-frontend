@@ -17,7 +17,6 @@
 </template>
 
 <script>
-    import axios from 'axios'
     export default {
     name: 'DonorBlock',
     data: function(){
@@ -35,7 +34,7 @@
     },
     created: function(){
         var vm = this;
-        axios.get("https://api.gatari.pw/donors")
+        this.$axios.get("https://api.gatari.pw/donors")
             .then((response) => vm.druzhbans = response.data.result);
     }
 }

@@ -215,9 +215,10 @@ body {
     ),
     url(../images/bg2.png);
     height: 180px;
-    width: 100%;
-    margin-top: 8px;
-    position: relative;
+    margin-top: 15px !important;
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+    flex: 0 0 auto;
     left: 0;
     bottom: 0;
 }
@@ -226,6 +227,8 @@ body {
     padding-top: 24px;
     float: left;
     font-size: 14px;
+    padding-left: 24px;
+    text-align: left;
 }
 
 .footer-info-block a{
@@ -250,9 +253,6 @@ body {
     color: white !important; 
     font-size: 20px; 
     font-weight: 600; 
-}
-.footer-info-block {
-    padding-left: 24px;
 }
 .header-bg {
     background-image: url(../images/icons/button.svg);
@@ -279,11 +279,7 @@ body {
 
 }
 
-@media only screen and (max-device-width: 580px) {
-    .footer-bg {
-    position: absolute;
-}
-}
+
 
 .header-bg:before {
     content: "";
@@ -738,118 +734,12 @@ button.login-btn.disabled {
     box-shadow: inset 0 0 0 1.6px #fff;
 }
 
-.leaderboard-banner {
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.6), 
-        rgba(0, 0, 0, 0.0)
-        ),
-        url(../images/lb-banner-bg.jpg);
-        height: 280px;
-        border-radius: 4px;
-        background-size: cover;
-        background-position-y: 50%;
-        box-shadow: -1px 2px 2px 1px rgba(0, 0, 0, 0.11);
-}
-.leaderboard-banner-stroke {
-    padding-top: 30px;
-    color: white;
-    font-weight: 700;
-    font-size: 38px;
-    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.33);
-}
-.leaderboard-banner-stroke2 {
-    color: white;
-    font-size: 16px;
-    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.33);
-}
-.leaderboard-main-bg {
-    background-color: #333333;
-    box-shadow: -1px 2px 2px 1px rgba(0, 0, 0, 0.11);
-    /*text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.33);*/
-    border-radius: 4px;
-    margin-top: 8px;
-    padding: 15px 20px 0;
-    
-}
-.leaderboard-column {
-    background-color: #444;
-    color: white;
-    height: 38px;
-    font-size: 12px;
+div#app {
+    display: flex;
+    flex-direction: column;
+    height: -webkit-fill-available;
 }
 
-.leaderboard-table{
-    width: 100%;
-    min-width: 650px;
-    white-space: nowrap;
-    text-align: center;
-    border-spacing: 0 3px;
-    border-collapse: separate;
-}
-
-.ranking-page-table__column {
-    padding: 6px 0;
-}
-
-.leaderboard-column-player-rank {
-    padding: 0 10px;
-    text-align: center;
-    background-color: #393939;
-    border-left: solid 0.7px #252525;
-}
-.leaderboard-column-player-name{
-    padding: 0 6px;
-    font-style: italic;
-    text-align: left;
-    font-size: 13px;
-}
-
-
-.leaderboard-player-flag {
-    width: 24px;
-    margin-right: 6px;
-}
-
-.ranking-page-table__heading {
-    font-weight: 400;
-    color: #999;
-    padding: 5px 12px;
-    text-align: center;
-    font-size: 12px;
-}
-
-.ranking-page-table__heading--main {
-    width: 100%;
-}
-
-.leaderboard-column-player-name-heading {
-    width: 100%;
-}
-.leadeboard-column-padding {
-    text-align: center;
-    padding: 0 10px;
-}
-
-.ranking-page-table__column:first-child {
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-}
-.ranking-page-table__column:last-child {
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-}
-tr.leaderboard-column td {
-    border-bottom: solid 3px #292929;
-    transition: 0.1s background-color;
-}
-
-.ranking-page-table__column--dimmed{
-    color: rgb(201, 201, 201);
-}
-
-.leaderboard-column:hover td:not(:first-child) {
-    background-color: #5a5a5a;
-}
-.leaderboard-column:hover td:first-child {
-    background-color: #464646;
+div#app>div:nth-child(2) {
+    flex: 1 0 auto;
 }

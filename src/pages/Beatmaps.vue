@@ -1,7 +1,7 @@
 <template>
 
     <div id="beatmaps">
-            <link rel="stylesheet" href="css/bm-main.css">
+            <link rel="stylesheet" href="css/beatmaps.css">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
