@@ -8,6 +8,7 @@ import VueI18n from 'vue-i18n'
 import axios from 'axios'
 import {mixin, locales} from "@/locales/locale"
 import VueSession from 'vue-session'
+import Leaderboard from '@/pages/Leaderboard.vue'
 
 Vue.prototype.$axios = axios;
 Vue.use(VueI18n);
@@ -37,6 +38,11 @@ var router = new VueRouter({
       path: '/beatmaps',
       name: 'beatmaps',
       component: Beatmaps
+    },
+    {
+      path: '/leaderboard',
+      name: 'leaderboard',
+      component: Leaderboard
     }
   ]
 })
