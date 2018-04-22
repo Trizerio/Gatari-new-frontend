@@ -6,10 +6,17 @@ Install the required dependencies
 ```
 $ npm install
 ```
-And finally start server
+
+Install history-server (optional for developing)
+```
+$ npm install -g history-server
+```
+
+And finally start dev server
 ```
 $ npm run dev
 ```
+
 
 And the site will be here: http://localhost:8080/public/
 
