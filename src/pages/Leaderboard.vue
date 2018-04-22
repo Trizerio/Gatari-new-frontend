@@ -12,6 +12,12 @@
                                 Соревнуйся с остальными игроками сервера и наблюдай за 
                                 статистикой.
                         </div>
+                        <div class="leaderboard-banner-swtich1 block-pad">
+                            Perfomance Points
+                        </div>
+                        <div class="leaderboard-banner-swtich2 ">
+                                Score
+                        </div>
                     </div>
                 </div>
             </div>
@@ -19,7 +25,9 @@
         <div class="container">
             <div class="row">
                 <div class="col">
+                    
                     <div class="leaderboard-main-bg">
+                        
                         <table class="leaderboard-table">
                             <thead class="leadeboard-column-padding">
                                 <tr>
