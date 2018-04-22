@@ -47,10 +47,17 @@
                                             <input class="registration-form" type="text" required="">
                                             <div class="account-edit-entry__label">beta key</div>
                                         </label></div> <button class="registration-reg-btn">
-                                                            Registrate
+                                                            Registrate <i class="fas fa-user-plus registration-reg-btn-icon"></i>
+
+                                                
                                                      </button></div>
                             
-                        </div>                        
+                        </div>  
+                        <div class="col-lg-6">
+                            <div class="registration-info-stroke">
+                                Мы вам будем очень благодарны если вы 
+                            </div>
+                        </div>                      
                     </div>
                 </div>
             </div>
