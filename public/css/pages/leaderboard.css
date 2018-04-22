@@ -149,3 +149,38 @@ tr.leaderboard-column td {
 .leaderboard-banner-swtich2:hover {
     opacity: 1;
 }
+.paginator {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 15px 0;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: white;
+    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.33);
+}
+.paginator-page {
+    margin: 0 5px;
+    padding: 0 8px;
+    font-size: 12px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+}
+.paginator-icon {
+    color: #666;
+    margin-bottom: 4px;
+    text-shadow: none;
+}
