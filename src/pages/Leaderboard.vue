@@ -52,7 +52,23 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <div class="paginator">
+                            <a><i class="fas fa-angle-double-left paginator-page  paginator-icon"></i></a>
+                            <a><i class="fas fa-angle-left paginator-page  paginator-icon"></i></a>
+
+                            <a class="paginator-page" style="color: #fc2;"> 1 </a>
+                            <a class="paginator-page"> 2 </a>
+                            <a class="paginator-page"> 3 </a>
+                            <a class="paginator-page"> 4 </a>
+                            <a class="paginator-page"> 5 </a>
+                            <a class="paginator-page"> 6 </a>
+                            <a class="paginator-page"> 7 </a>
+
+                            <a><i class="fas fa-angle-right paginator-page  paginator-icon"></i></a>
+                            <a><i class="fas fa-angle-double-right paginator-page paginator-icon"></i> </a>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
