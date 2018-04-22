@@ -5,21 +5,6 @@ export var locales = {
     "ru" : ruLocale
   };
 
-export const mixin = {
-  methods: {
-    window: function () {
-      return window;
-    },
-    setLocale: function(lang){
-      if(window.languages[lang] && this.$i18n.locale != lang ){
-        this.$cookie.set('lang', lang);
-        window.language = window.languages[lang];
-        this.$i18n.locale = lang;
-        console.log("selected new language: "+lang);
-      }
-  }
-  }
-};
 
 window.languages = {
   "en":{

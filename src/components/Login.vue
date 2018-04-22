@@ -15,7 +15,7 @@
                         <input autocomplete="off" v-model="password" type="password" class="login-form login-form-password" :placeholder="$t('login.password')">
                     </form>
                     <div class="login-forgot"> {{ $t('login.forgot') }} </div>
-                    <button @click="auth" :class="'login-btn'+(login == '' || password == '' ? ' disabled' : '')">
+                    <button @click="LoginAttempt" :class="'login-btn'+(login == '' || password == '' || (!user && error) ? ' disabled' : '')">
                             {{ $t('header.login') }}  <i class="fas fa-sign-in-alt login-icon"></i>
                     </button>
                 </div>
@@ -49,35 +49,25 @@
             return{
                 login:"",
                 password:"",
-                user:{},
                 error: ""
                 
             }
         },
         methods:{
-            auth: function(){
+            LoginAttempt: function(){
                 var vm = this;
-                if(vm.login == '' || vm.password == '') return;
-                this.$axios.get("https://api.gatari.pw/user/auth",{params:{"u":vm.login,"p":vm.password}})
-                .then(function(response){
-                    if(response.data.code != 200){
+                vm.auth(vm.login, vm.password, function(result){
+                    if(result.code == 200){
+                        vm.$parent.loginForm = false;
+                        vm.onLogin({
+                            user: result.user
+                        });
+                    }else{
                         vm.user = null;
-                        vm.error = response.data.code;
                         setTimeout(()=>vm.user = {}, 2500);
-                        return;
+                        vm.error = result.code;
                     }
-                    vm.user = response.data.user;
-                    vm.closeForm();
-                    vm.onLogin({
-                        user: vm.user
-                    });
-                })
-                .catch(function(e){
-                    console.log(e);
-                    vm.user = null;
-                    vm.error = 500;
                 });
-                
             },
             closeForm:function(){
                 this.$parent.loginForm = false;

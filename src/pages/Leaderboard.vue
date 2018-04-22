@@ -67,9 +67,9 @@
             leaderboard:{}
         }
     },
-    created(){
+    beforeCreate(){
         var vm = this;
-        this.$axios.get("http://api.gatari.pw/leaderboard")
+        this.$axios.get("https://api.gatari.pw/leaderboard")
         .then(function(response){
             vm.leaderboard = response.data.leaderboard;
         });
