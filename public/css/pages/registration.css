@@ -1,0 +1,107 @@
+body {
+   /* background-image: url(/images/bm-bg.png); */
+}
+.registration-banner {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.0)
+        ),
+        url(/images/banners/registration-bg.png);
+        height: 280px;
+        border-radius: 4px;
+        background-size: cover;
+        box-shadow: -1px 2px 2px 1px rgba(0, 0, 0, 0.11);
+        background-position-y: 70%;
+}
+.registration-banner-stroke {
+    padding-top: 30px;
+    color: white;
+    font-weight: 700;
+    font-size: 38px;
+    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.33);
+}
+.registration-banner-stroke2 {
+    color: white;
+    font-size: 16px;
+    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.33);
+}
+.registration-bg {
+    height: auto;
+    border-radius: 4px;
+    box-shadow: -1px 2px 2px 1px rgba(0, 0, 0, 0.11);
+    margin-top: 8px;
+    background-color:  #4d4d4d;
+
+}
+.registration-block-stroke {
+    color: white;
+    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.33);
+    font-weight: 700;
+    font-size: 24px;
+    padding-top: 24px;
+}
+.registration-block-stroke2 {
+    color: white;
+    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.33);
+    font-weight: 400s;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+.registration-form {
+    width: 280px;
+    margin-top: 6px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3d3d3d;
+    padding: 4px;
+    font-size: 14px;
+    height: 60px;
+    height: 36px;
+    outline: none;
+    color: white;
+    height: 28px;
+}
+.registration-reg-btn{
+    margin-top: 6px;
+    background-image: url(/images/icons/button.svg);
+    background-color: #a41042;
+    width: 124px;
+    height: 38px;
+    border: none;
+    background-size: 150%;
+    border-radius: 4px;
+    color: white;
+    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.33);
+    font-size: 14px;
+    transition: 0.22s box-shadow, 0.2s background-color, 0.4s background-position-x;
+    cursor: pointer;
+    margin-bottom: 24px;
+    max-width: 500px;
+}
+
+.registration-reg-btn:focus {
+    outline:0;
+}
+.registration-reg-btn:hover {
+    background-color: #f93275;
+    background-position-x: -30px;
+    
+}
+.reg-form-block {
+    color: white;
+    font-size: 12px;
+    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.33);
+    padding
+}
+.reg-form-single {
+    text-align: left;
+}
+.registration-block-header {
+    background-color: #333;
+    width: 100%;
+    padding-left: 82px;
+    padding-bottom: 6px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+

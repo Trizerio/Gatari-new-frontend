@@ -9,6 +9,7 @@ import axios from 'axios'
 import {mixin, locales} from "@/locales/locale"
 import VueSession from 'vue-session'
 import Leaderboard from '@/pages/Leaderboard.vue'
+import Registration from '@/pages/Registration.vue'
 
 Vue.prototype.$axios = axios;
 Vue.use(VueI18n);
@@ -44,6 +45,11 @@ var router = new VueRouter({
       path: '/leaderboard',
       name: 'leaderboard',
       component: Leaderboard
+    },
+    {
+      path: '/registration',
+      name: 'registration',
+      component: Registration
     },
     { path: '*', redirect: '/home' }
   ]
