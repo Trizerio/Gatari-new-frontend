@@ -31,16 +31,24 @@
                                 </div>
                              </div>
                              <div class="col-lg-6">
-                            <div class="reg-form-block block-pad">
-                            <div class="reg-form-single"> username <input type="text" class="registration-form"> </div>
-                            <div class="reg-form-single">password<input type="text" class="registration-form"> </div>
-                            <div class="reg-form-single">repeat password<input type="text" class="registration-form"> </div>  
-                            <div class="reg-form-single">e-mail <input type="text" class="registration-form"> </div>
-                            <div class="reg-form-single">beta key<input type="text" class="registration-form">  </div>
-                            <button class="registration-reg-btn">
-                                    Registrate
-                             </button>
-                         </div>
+                                    <div class="reg-form-block block-pad"><label class="account-edit-entry" data-password-field="password">
+                                            <input class="registration-form" type="text" required="">
+                                            <div class="account-edit-entry__label">username</div>      
+                                        </label> <label class="account-edit-entry" data-password-field="password">
+                                            <input class="registration-form" type="text" required="">
+                                            <div class="account-edit-entry__label">password</div>            
+                                        </label> <label class="account-edit-entry" data-password-field="password">
+                                            <input class="registration-form" type="text" required="">
+                                            <div class="account-edit-entry__label">repeat password</div>   
+                                        </label> <label class="account-edit-entry" data-password-field="password">
+                                            <input class="registration-form" type="text" required="">
+                                            <div class="account-edit-entry__label">e-mail</div>
+                                        </label> <div class="reg-form-single"><label class="account-edit-entry" data-password-field="password">
+                                            <input class="registration-form" type="text" required="">
+                                            <div class="account-edit-entry__label">beta key</div>
+                                        </label></div> <button class="registration-reg-btn">
+                                                            Registrate
+                                                     </button></div>
                             
                         </div>                        
                     </div>

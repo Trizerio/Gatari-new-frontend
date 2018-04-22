@@ -30,9 +30,9 @@
                 <div class="login-registrate-stroke2">
                         {{ $t('login.sub.sub') }}       
                 </div>
-                <button class="registrate-login-block-btn">
-                        {{ $t('misc.registration') }}  <i class="fa fa-key login-icon"></i>
-                    </button>
+                <router-link @click.native="closeForm" tag="button" to="registration" class="registrate-login-block-btn" >
+                    {{ $t('misc.registration') }}  <i class="fa fa-key login-icon"></i>
+                </router-link>
                 </div>
             </div>   
             </transition>
@@ -67,10 +67,10 @@
                         return;
                     }
                     vm.user = response.data.user;
+                    vm.closeForm();
                     vm.onLogin({
                         user: vm.user
                     });
-                    vm.$parent.loginForm = false;
                 })
                 .catch(function(e){
                     console.log(e);
@@ -78,6 +78,9 @@
                     vm.error = 500;
                 });
                 
+            },
+            closeForm:function(){
+                this.$parent.loginForm = false;
             }
         }
     }
